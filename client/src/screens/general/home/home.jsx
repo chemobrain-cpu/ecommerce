@@ -17,10 +17,7 @@ let Home = () => {
     
     return (< >
         <NavBar />
-        <div style={{ height: '90px' }}>
-            <p>.</p>
-
-        </div>
+        
         <Description 
         header="OBAS IGBINEDION GLOBAL LIMITED" text="Dealers of Furnitures,Roofing Tiles,Doors,Water Collector,Aluminium & Accesosories" 
         imageUrl={`../../roofs.jpg`} />

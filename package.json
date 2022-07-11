@@ -7,7 +7,7 @@
     "start": "nodemon server/app.js",
     "client": "npm start --prefix client",
     "test": "npm test",
-    "dev": "concurrently \"npm start\" \"npm run client \" ",
+    "dev": "concurrently \"npm start\" \"npm run client \" "
     
   },
   "author": "presh Devops",

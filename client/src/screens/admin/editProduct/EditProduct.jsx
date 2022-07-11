@@ -1,4 +1,4 @@
-import React, { useState, useCallback,useEffect } from 'react'
+import React, { useState, useCallback, useEffect } from 'react'
 import styles from './editProduct.module.css'
 import FormInput from "../../../elements/input-card/input"
 import Formheader from "../../../elements/main-header/formhead"
@@ -10,16 +10,16 @@ import LoadingModal from "../../../elements/Modal/LoadingModal"
 import ErrorModal from "../../../elements/Modal/ErrorModal"
 import InfoModal from "../../../elements/Modal/InfoModal"
 //importing redux fun
-import { editProduct ,getProduct} from "../../../store/action/userAppStorage";
+import { editProduct, getProduct } from "../../../store/action/userAppStorage";
 
 import { useDispatch } from "react-redux";
 import SelectInput from "../../../elements/input-card/select"
 //importing from react-router
-import {useNavigate,useParams} from "react-router-dom"
+import { useNavigate, useParams } from "react-router-dom"
 
 
 let EditProduct = () => {
-    const {id} = useParams()
+    const { id } = useParams()
     //
     let [productId, setProductId] = useState("")
     let [productPhoto, setProductPhoto] = useState("")
@@ -45,26 +45,26 @@ let EditProduct = () => {
         setIsLoading(true)
         let res = await dispatch(getProduct(id))
         if (!res.bool) {
-            if(!res.status){
+            if (!res.status) {
                 console.log(res.message)
                 setIsLoading(false)
                 setIsError(res.message)
-            }else{
-                if(res.status === "admin"){
+            } else {
+                if (res.status === "admin") {
                     navigate("/adminlogin")
-                }else if(res.status === "user"){
+                } else if (res.status === "user") {
                     navigate("/login")
                 }
             }
         } else {
             setIsLoading(false)
             //navigate to product page
-            const { _id:id,
-            category,
-            subCategory,
-            amount,
-            NameOfProduct,
-            negotaible,about} = res.message
+            const { _id: id,
+                category,
+                subCategory,
+                amount,
+                NameOfProduct,
+                negotaible, about } = res.message
 
             setProductId(id)
             setProductCategory(category)
@@ -74,7 +74,7 @@ let EditProduct = () => {
             setNegotiable(negotaible)
             setAboutProduct(about)
         }
-    }, [dispatch,getProduct])
+    }, [dispatch, getProduct])
 
     let setFormDetails = useCallback(e => {
         if (e.formName === "productPhoto") {
@@ -101,20 +101,20 @@ let EditProduct = () => {
             let formValue = e.value
             setProductAmount(formValue)
 
-        }else if (e.formName === "aboutProduct") {
+        } else if (e.formName === "aboutProduct") {
             let formValue = e.value
             setAboutProduct(formValue)
 
         }
     }, [])
 
-    let submitHandler =useCallback( async (e) => {
+    let submitHandler = useCallback(async (e) => {
         e.preventDefault()
         if (productPhoto && productAmount && ProductName && negotiable && aboutProduct) {
             //submitt form 
             setIsLoading(true)
             let res = await dispatch(editProduct({
-                id:productId,
+                id: productId,
                 productPhoto,
                 productCategory,
                 productSubCategory,
@@ -137,21 +137,21 @@ let EditProduct = () => {
                 }, 2000)
             }
         }
-    },[productId,
+    }, [productId,
         productPhoto,
         productCategory,
         productSubCategory,
         productAmount,
         ProductName,
         negotiable,
-        aboutProduct,dispatch,editProduct])
+        aboutProduct, dispatch, editProduct])
 
     let closeModal = useCallback((e) => {
         navigate("/adminproducts")
 
     }, [])
 
-    
+
 
     if (isError) {
         return <ErrorModal close={closeModal} error='an error occureed' />
@@ -174,12 +174,16 @@ let EditProduct = () => {
                 </div>
 
                 <div className={styles.right} >
+                    <div style={{ height: '70px' }}>
+                        <p>.</p>
+
+                    </div>
 
                     <Space className={styles.space} />
 
-                  
+
                     <form onSubmit={submitHandler} className={styles.form}>
-  
+
 
                         <FormInput
                             icon='edit'
@@ -188,7 +192,7 @@ let EditProduct = () => {
                             className={styles.input}
                             formName="productPhoto"
                             setFormDetails={setFormDetails}
-                            
+
                         />
                         <SelectInput
                             icon='menu'

@@ -127,6 +127,7 @@ let AddProduct = () => {
     return (
         <>
             <Formheader className={styles.togglemenu} title='Login' />
+            
             <div className={styles.screen} >
                 <div className={styles.left}>
                     <SideBar />
@@ -134,6 +135,10 @@ let AddProduct = () => {
                 <div className={styles.right} >
 
                     <Space className={styles.space} />
+                    <div style={{height:'70px'}}>
+                <p>.</p>
+
+            </div>
 
 
                     <form onSubmit={submitHandler} className={styles.form}>

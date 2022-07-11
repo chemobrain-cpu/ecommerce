@@ -49,7 +49,7 @@ let EditProfile = () => {
 
     let submitHandler = useCallback(async (e) => {
         e.preventDefault()
-        if (username && country && state ) {
+        if (username && country && state) {
             //submitt form 
             setIsLoading(true)
             let res = await dispatch(modifyUser({
@@ -79,10 +79,10 @@ let EditProfile = () => {
                 }
             }
         }
-    },[modifyUser,username,
+    }, [modifyUser, username,
         country,
         state,
-        photo,modifyUser,user,dispatch,navigate])
+        photo, modifyUser, user, dispatch, navigate])
 
     let closeModal = useCallback((e) => {
         setIsLoading(false)
@@ -95,42 +95,42 @@ let EditProfile = () => {
         let file = e.target.files[0]
         setPhoto(file)
         let reader = new FileReader()
-        reader.onload = (e)=>{
+        reader.onload = (e) => {
             let value = e.target.result
             setProfilePhoto(value)
         }
         reader.readAsDataURL(file)
-    },[])
+    }, [])
 
 
     let deletePhoto = (e) => {
         setProfilePhoto("")
     }
 
-    useEffect(async() => {
-            setIsLoading(true)
-            let res = await dispatch(getUser(user))
-            if (!res.bool) {
-                console.log(res)
-                if(!res.status){
-                    setIsLoading(false)
-                    setIsError(res.message)
-                }else{
-                    if(res.status === "admin"){
-                        navigate("/adminlogin")
-                    }else if(res.status === "user"){
-                        navigate("/login")
-                    }
-                }
-               
-            } else {
+    useEffect(async () => {
+        setIsLoading(true)
+        let res = await dispatch(getUser(user))
+        if (!res.bool) {
+            console.log(res)
+            if (!res.status) {
                 setIsLoading(false)
-                setCountry(res.message.country)
-                setState(res.message.state)
-                setUsername(res.message.username)
+                setIsError(res.message)
+            } else {
+                if (res.status === "admin") {
+                    navigate("/adminlogin")
+                } else if (res.status === "user") {
+                    navigate("/login")
+                }
             }
-    
-        },[user,getUser,navigate,dispatch])
+
+        } else {
+            setIsLoading(false)
+            setCountry(res.message.country)
+            setState(res.message.state)
+            setUsername(res.message.username)
+        }
+
+    }, [user, getUser, navigate, dispatch])
 
     let tryAgain = useCallback(() => {
 
@@ -151,6 +151,7 @@ let EditProfile = () => {
     return (
         <>
             <Formheader className={styles.togglemenu} title='Login' />
+
             <div className={styles.screen} >
                 <div className={styles.left}>
                     <SideBar />
@@ -159,6 +160,10 @@ let EditProfile = () => {
                 <div className={styles.right} >
 
                     <Space className={styles.space} />
+                    <div style={{ height: '70px' }}>
+                        <p>.</p>
+
+                    </div>
 
 
                     <form onSubmit={submitHandler} className={styles.form}>
@@ -172,7 +177,7 @@ let EditProfile = () => {
                             {!profilePhoto ? <img src={`../../smile.png`} alt='product image' className={styles.circularPic} /> : ""}
                             <div className={styles.buttonContainer}>
                                 <div className={styles.deletePhoto}>
-                                    <input placeholder="pick photo" type="file"  onChange={changePhoto} />
+                                    <input placeholder="pick photo" type="file" onChange={changePhoto} />
                                 </div>
                                 <div className={styles.editPhoto} onClick={deletePhoto}>
                                     <p>delete photo</p>

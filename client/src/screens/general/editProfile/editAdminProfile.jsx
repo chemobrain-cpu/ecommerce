@@ -49,7 +49,7 @@ let EditAdminProfile = () => {
 
     let submitHandler = useCallback(async (e) => {
         e.preventDefault()
-        if (username && country && state ) {
+        if (username && country && state) {
             //submitt form 
             setIsLoading(true)
             let res = await dispatch(modifyAdmin({
@@ -84,10 +84,10 @@ let EditAdminProfile = () => {
 
             }
         }
-    },[username,
+    }, [username,
         country,
         state,
-        photo,modifyAdmin,navigate,dispatch])
+        photo, modifyAdmin, navigate, dispatch])
 
     let closeModal = useCallback((e) => {
         setIsLoading(false)
@@ -101,34 +101,34 @@ let EditAdminProfile = () => {
         let file = e.target.files[0]
         setPhoto(file)
         let reader = new FileReader()
-        reader.onload = (e)=>{
+        reader.onload = (e) => {
             let value = e.target.result
             console.log(value)
             setProfilePhoto(value)
         }
         reader.readAsDataURL(file)
-    },[])
-    
+    }, [])
+
     let deletePhoto = (e) => {
         setProfilePhoto("")
     }
 
-    let loader = useCallback(async() => {
+    let loader = useCallback(async () => {
         setIsLoading(true)
         let res = await dispatch(getAdmin(user))
         if (!res.bool) {
             console.log(res)
-            if(!res.status){
+            if (!res.status) {
                 setIsLoading(false)
                 setIsError(res.message)
-            }else{
-                if(res.status === "admin"){
+            } else {
+                if (res.status === "admin") {
                     navigate("/adminlogin")
-                }else if(res.status === "user"){
+                } else if (res.status === "user") {
                     navigate("/login")
                 }
             }
-           
+
         } else {
             setIsLoading(false)
             setCountry(res.message.country)
@@ -136,14 +136,14 @@ let EditAdminProfile = () => {
             setUsername(res.message.username)
         }
 
-    }, [ dispatch,getAdmin.navigate])
+    }, [dispatch, getAdmin.navigate])
 
     useEffect(() => {
         loader()
-        
+
     }, [loader])
 
-  
+
 
 
     let tryAgain = useCallback(() => {
@@ -165,12 +165,17 @@ let EditAdminProfile = () => {
     return (
         <>
             <Formheader className={styles.togglemenu} title='Login' />
+
             <div className={styles.screen} >
                 <div className={styles.left}>
                     <SideBar />
                 </div>
 
                 <div className={styles.right} >
+                    <div style={{ height: '70px' }}>
+                        <p>.</p>
+
+                    </div>
 
                     <Space className={styles.space} />
 
@@ -186,7 +191,7 @@ let EditAdminProfile = () => {
                             {!profilePhoto ? <img src={`../../smile.png`} alt='product image' className={styles.circularPic} /> : ""}
                             <div className={styles.buttonContainer}>
                                 <div className={styles.deletePhoto}>
-                                    <input placeholder="pick photo" type="file"  onChange={changePhoto} />
+                                    <input placeholder="pick photo" type="file" onChange={changePhoto} />
                                 </div>
                                 <div className={styles.editPhoto} onClick={deletePhoto}>
                                     <p>delete photo</p>

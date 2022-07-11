@@ -85,7 +85,7 @@ export const checkIfIsLoggedIn = () => {
       return
     }
     if(user.admin){
-      response = await fetch(`http://localhost:8080/adminByToken`, {
+      response = await fetch(`https://shielded-plateau-98818.herokuapp.com//adminByToken`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -94,7 +94,7 @@ export const checkIfIsLoggedIn = () => {
     })
 
     }else{
-      response = await fetch(`http://localhost:8080/userByToken`, {
+      response = await fetch(`https://shielded-plateau-98818.herokuapp.com//userByToken`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -132,7 +132,7 @@ export const adminsignup = (data) => {
   return async (dispatch, getState) => {
 
     try {
-      const response = await fetch(`http://localhost:8080/adminSignup`, {
+      const response = await fetch(`https://shielded-plateau-98818.herokuapp.com//adminSignup`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
@@ -179,7 +179,7 @@ export const adminlogin = (data) => {
   return async (dispatch, getState) => {
     //do some check on the server if its actually login before proceding to dispatch
     try {
-      const response = await fetch(`http://localhost:8080/adminLogin`, {
+      const response = await fetch(`https://shielded-plateau-98818.herokuapp.com//adminLogin`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
@@ -242,7 +242,7 @@ export const addProduct = (data) => {
     //do some check on the server if its actually login before proceding to dispatch
     let { token } = getState().userAuth
     try {
-      const response = await fetch(`http://localhost:8080/addProduct`, {
+      const response = await fetch(`https://shielded-plateau-98818.herokuapp.com//addProduct`, {
         method: "POST",
         body: formData,
         headers: {
@@ -306,7 +306,7 @@ export const delProduct = (productId) => {
     //do some check on the server if its actually login before proceding to dispatch
     try {
       let { token } = getState().userAuth
-      const response = await fetch(`http://localhost:8080/deleteProduct/${productId}`, {
+      const response = await fetch(`https://shielded-plateau-98818.herokuapp.com//deleteProduct/${productId}`, {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",
@@ -376,7 +376,7 @@ export const editProduct = (data) => {
     const { id } = data
     let { token } = getState().userAuth
     try {
-      const response = await fetch(`http://localhost:8080/editProduct/${id}`, {
+      const response = await fetch(`https://shielded-plateau-98818.herokuapp.com//editProduct/${id}`, {
         method: "PATCH",
         body: formData,
         headers: {
@@ -448,7 +448,7 @@ export const getAdmin = (id) => {
     //do some check on the server if its actually login before proceding to dispatch
     try {
       let { token } = getState().userAuth
-      const response = await fetch(`http://localhost:8080/admin`, {
+      const response = await fetch(`https://shielded-plateau-98818.herokuapp.com//admin`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -516,7 +516,7 @@ export const modifyAdmin = (data) => {
     //do some check on the server if its actually login before proceding to dispatch
     let { token } = getState().userAuth
     try {
-      const response = await fetch(`http://localhost:8080/admin`, {
+      const response = await fetch(`https://shielded-plateau-98818.herokuapp.com//admin`, {
         method: "PATCH",
         body: formData,
         headers: {
@@ -587,7 +587,7 @@ export const getAdminOrders = () => {
     try {
       //get the order
       let { token } = getState().userAuth
-      const response = await fetch(`http://localhost:8080/adminorders`, {
+      const response = await fetch(`https://shielded-plateau-98818.herokuapp.com//adminorders`, {
         headers: {
           "Content-Type": "application/json",
           "header": `${token}`
@@ -651,7 +651,7 @@ export const getAdminOrder = (id) => {
     try {
       //get the order
       let { products, token } = getState().userAuth
-      const response = await fetch(`http://localhost:8080/adminorder/${id}`, {
+      const response = await fetch(`https://shielded-plateau-98818.herokuapp.com//adminorder/${id}`, {
         headers: {
           "Content-Type": "application/json",
           "header": `${token}`
@@ -731,7 +731,7 @@ export const adminActivateOrder = (id) => {
     try {
       //get the order
       let { products, token } = getState().userAuth
-      const response = await fetch(`http://localhost:8080/activateorder/${id}`, {
+      const response = await fetch(`https://shielded-plateau-98818.herokuapp.com//activateorder/${id}`, {
         headers: {
           "Content-Type": "application/json",
           "header": `${token}`
@@ -810,7 +810,7 @@ export const getUsers = () => {
   return async (dispatch, getState) => {
     try {
       let { products, token } = getState().userAuth
-      const response = await fetch(`http://localhost:8080/users`, {
+      const response = await fetch(`https://shielded-plateau-98818.herokuapp.com//users`, {
         headers: {
           "Content-Type": "application/json",
           "header": `${token}`
@@ -875,7 +875,7 @@ export const signup = (data) => {
   return async (dispatch, getState) => {
     //do some check on the server if its actually login before proceding to dispatch
     try {
-      const response = await fetch(`http://localhost:8080/signup`, {
+      const response = await fetch(`https://shielded-plateau-98818.herokuapp.com//signup`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
@@ -920,7 +920,7 @@ export const login = (data) => {
   return async (dispatch, getState) => {
     //do some check on the server if its actually login before proceding to dispatch
     try {
-      const response = await fetch(`http://localhost:8080/login`, {
+      const response = await fetch(`https://shielded-plateau-98818.herokuapp.com//login`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
@@ -1160,7 +1160,7 @@ export const makePayment = (card) => {
       foundOrder.cardInfo.cardNumbeer = cardNumber
       foundOrder.cardInfo.cvv = cvvNumber
       foundOrder.cardInfo.expiry = expiryDate
-      const response = await fetch(`http://localhost:8080/pay`, {
+      const response = await fetch(`https://shielded-plateau-98818.herokuapp.com//pay`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -1216,7 +1216,7 @@ export const getUser = () => {
     //do some check on the server if its actually login before proceding to dispatch
     try {
       let { token } = getState().userAuth
-      const response = await fetch(`http://localhost:8080/user`, {
+      const response = await fetch(`https://shielded-plateau-98818.herokuapp.com//user`, {
         headers: {
           "Content-Type": "application/json",
           "header": `${token}`
@@ -1286,7 +1286,7 @@ export const modifyUser = (data) => {
 
     let { token } = getState().userAuth
     try {
-      const response = await fetch(`http://localhost:8080/user`, {
+      const response = await fetch(`https://shielded-plateau-98818.herokuapp.com//user`, {
         method: "PATCH",
         body: formData,
         headers: {
@@ -1468,7 +1468,7 @@ export const getProducts = () => {
     //do some check on the server if its actually login before proceding to dispatch
     let { token } = getState().userAuth
     try {
-      const response = await fetch("http://localhost:8080/products", {
+      const response = await fetch("https://shielded-plateau-98818.herokuapp.com//products", {
         headers: {
           "Content-Type": "application/json",
           "header": `${token}`
@@ -1510,7 +1510,7 @@ export const getProductsCategory = (category) => {
 
     let { products, token } = getState().userAuth
     try {
-      const response = await fetch(`http://localhost:8080/products/${category}`, {
+      const response = await fetch(`https://shielded-plateau-98818.herokuapp.com//products/${category}`, {
         headers: {
           "Content-Type": "application/json",
           "header": `${token}`
@@ -1547,7 +1547,7 @@ export const getProduct = (id) => {
   return async (dispatch, getState) => {
     //do some check on the server if its actually login before proceding to dispatch
     try {
-      const response = await fetch(`http://localhost:8080/product/${id}`, {
+      const response = await fetch(`https://shielded-plateau-98818.herokuapp.com//product/${id}`, {
         headers: {
           "Content-Type": "application/json"
         }
@@ -1590,7 +1590,7 @@ export const getProductComment = (id) => {
   return async (dispatch, getState) => {
     //do some check on the server if its actually login before proceding to dispatch
     try {
-      const response = await fetch(`http://localhost:8080/comment/${id}`, {
+      const response = await fetch(`https://shielded-plateau-98818.herokuapp.com//comment/${id}`, {
         headers: {
           "Content-Type": "application/json"
         }
@@ -1676,7 +1676,7 @@ export const readNotification = (data) => {
     //change the status of the given notification in the user field
     let { token } = getState().userAuth
     try {
-      const response = await fetch(`http://localhost:8080/notification`, {
+      const response = await fetch(`https://shielded-plateau-98818.herokuapp.com//notification`, {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",
@@ -1738,7 +1738,7 @@ export const getOrders = () => {
     try {
       //get the order
       let { token } = getState().userAuth
-      const response = await fetch(`http://localhost:8080/orders`, {
+      const response = await fetch(`https://shielded-plateau-98818.herokuapp.com//orders`, {
         headers: {
           "Content-Type": "application/json",
           "header": `${token}`
@@ -1803,7 +1803,7 @@ export const getUserOrders = (id) => {
       let { token } = getState().userAuth
 
 
-      const response = await fetch(`http://localhost:8080/userorders/${id}`, {
+      const response = await fetch(`https://shielded-plateau-98818.herokuapp.com//userorders/${id}`, {
         headers: {
           "Content-Type": "application/json",
           "header": `${token}`
@@ -1867,7 +1867,7 @@ export const getOrder = (id) => {
     try {
       //get the order
       let { products, token } = getState().userAuth
-      const response = await fetch(`http://localhost:8080/order/${id}`, {
+      const response = await fetch(`https://shielded-plateau-98818.herokuapp.com//order/${id}`, {
         headers: {
           "Content-Type": "application/json",
           "header": `${token}`

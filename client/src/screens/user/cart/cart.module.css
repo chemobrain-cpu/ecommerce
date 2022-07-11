@@ -1,0 +1,266 @@
+.togglemenu{
+    display: flex;
+    height:70px;
+    padding-bottom: 10px;
+    justify-content:space-between;
+    position: fixed;
+    z-index:3;
+    width:100vw;
+    background:var(--color-background);
+    margin:0px;
+    width:100%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom: 10px;
+}
+
+.screen{
+    width:100%;
+    display:flex;
+    gap:0rem
+}
+.dashboardname h2{
+    font-size: 2.2rem;
+    color:var(--color-chocolate);
+    font-weight: 100;
+    margin-bottom: 10px;
+}
+
+.screen .left{
+    display:flex;
+    flex-direction: column;
+    gap:1rem;
+    width:20vw;
+    margin-top: 8%;
+    overflow-y: scroll;
+    height: 100%;
+    position:fixed;
+    left:0%;
+  }
+.screen .right{
+display:flex;
+flex-direction: column;
+gap:1rem;
+height: 100%;
+width:80vw;
+overflow-y: scroll;
+margin-left:20vw;
+margin-top: 10%;
+
+}
+.screen .right .innerright{
+    display:flex;
+    flex-direction: column;
+}
+.dashboardname h2{
+    font-size: 2.5rem;
+    color:var(--color-chocolate)
+}
+
+/* cart items */
+.innerright{
+
+}
+.innerright .leftsection{
+    width:100%;
+     margin-left: auto;
+    margin-right: auto;
+}
+.innerright .leftsection{
+    width:100%;
+}
+
+.innerright .rightsection{
+    width:100%
+
+}
+
+/* submit*/
+.submitbutton{
+    display:flex;
+    width:100%;
+    height:65px;
+    justify-content: space-between;
+}
+.nextcon,.cancelcon{
+    width:48%;
+    height:60px;
+    background-color: var(--color-chocolate);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.nextcon p{
+    color:white;
+    font-size: 1.2rem;
+    font-weight: 500;
+
+}
+.cancelcon p{
+    color:white;
+    font-size: 1.2rem;
+    font-weight: 500;
+
+}
+/*  table*/
+.table{
+    width:80%;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    position: static;
+    
+}
+td{
+    width:50px;
+    height:70px;
+    border:1px solid var(--color-fade);
+    color:var(--color-chocolate);
+    font-weight: 400;
+    padding:20px;
+    font-size: 1.2rem;
+}
+
+/* mobile size*/
+@media screen and (min-width:0px) and (max-width:700px){
+    .togglemenu{
+        display: flex;
+        height:70px;
+        padding-bottom: 10px;
+        justify-content:space-between;
+        position: fixed;
+        z-index:3;
+        width:100vw;
+        background:var(--color-background);
+        margin:0px;
+        width:100%;
+        margin-left:auto;
+        margin-right:auto;
+        margin-bottom: 10px;
+      
+       
+       
+    }
+    .togglemenu    .left{
+        width:50%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    
+    }
+   
+    .screen{
+        width:100%;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+  .screen .left{
+      display:none;
+  }
+
+  .screen .right{
+        width:100%;
+         margin-top:30%;
+         display:flex;
+         flex-direction: column;
+         gap:1rem;
+         margin-right:auto;
+         margin-left:auto;
+         max-height: 100%;
+         overflow-y: scroll;
+         position: static;
+         left:0;
+    }
+  
+    .dashboardname h2{
+        font-size: 2rem;
+        color:var(--color-chocolate)
+    }
+
+
+
+    /*  */
+   
+    
+   
+   
+   }
+   /* mobile size*/
+@media screen and (min-width:700px) and (max-width:1000px){
+    .togglemenu{
+        display: flex;
+        height:70px;
+        padding-bottom: 10px;
+        justify-content:space-between;
+        position: fixed;
+        z-index:3;
+        width:100vw;
+        background:var(--color-background);
+        margin:0px;
+        width:100%;
+        margin-left:auto;
+        margin-right:auto;
+        margin-bottom: 10px;
+      
+       
+       
+    }
+    .togglemenu    .left{
+        width:50%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    
+    }
+    .screen{
+        width:100%;
+        display:flex;
+        justify-content: center;
+    }
+    .screen .left{
+        width:30vw;
+        margin-top: 80px;
+        display:flex;
+        flex-direction: column;
+        gap:1rem;
+        margin-right:auto;
+        margin-left:auto;
+        overflow-y: scroll;
+        height: 100%;
+        position:fixed;
+        left:0%;
+      }
+      .screen .right{
+        width:70vw;
+        margin-top: 80px;
+        display:flex;
+        flex-direction: column;
+        gap:1rem;
+        margin-right:auto;
+        margin-left:auto;
+        overflow-y: scroll;
+        position: fixed;
+        left:30vw;
+        padding-bottom: 100px;
+        }
+    .screen .right .innerright{
+        display:flex;
+        
+    
+        
+   
+   }
+ 
+   
+   
+   
+    
+  
+    /* styling the side-bar section */
+   
+}
+

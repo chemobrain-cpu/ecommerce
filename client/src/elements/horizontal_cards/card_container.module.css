@@ -1,0 +1,5 @@
+.horizontal_cards{
+    display:flex;
+    gap:2rem;
+    overflow-x:scroll;
+}

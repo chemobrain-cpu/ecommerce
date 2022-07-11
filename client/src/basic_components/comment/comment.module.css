@@ -1,0 +1,68 @@
+.mainComment{
+    width:100%;
+    padding:0px;
+    border-radius: 10px;
+    margin:0px;
+    margin-bottom: 0px;
+
+}
+.actualMain{
+    background-color: var(--color-fade);
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding:15px;
+    padding-left: 20px;
+    padding-right: 0px;
+}
+
+/* reply comment */
+ .replyComment{
+    width:80%;
+    align-self:flex-end;
+    margin-bottom: 20px;
+    margin-left:20%;
+    padding:10px;
+    margin-top: 5px;
+    background-color: var(--color-fade);
+    border-radius: 10px;
+
+    
+}
+
+
+/*styling the function*/
+.function{
+    display:flex;
+    box-sizing:border-box;
+    padding-left: 10%;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.function span{
+    color:var(--color-chocolate)
+
+}
+
+/*send Message*/
+.sendMessage{
+    margin-top:90px;
+}
+
+@media screen and (min-width:0px) and (max-width:700px){
+       /* styling the comment section*/
+    /*comment section*/
+
+ .mainComment {
+    width:100%;
+    margin-bottom:-10px;
+}
+
+
+/* styling reply comment */
+ .replyComment{
+    width:80%;
+    align-self: flex-end;
+}
+
+}

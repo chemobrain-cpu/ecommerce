@@ -1,0 +1,89 @@
+
+.search{
+    display:flex;
+    justify-content:start;
+    width:100%;
+    background-color: var(--color-background);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    height:60px;
+    align-items: center;
+}
+.search_input{
+    margin-right: 10px;
+    width:80%;
+    font-size: 1rem;
+    text-align: left;
+    height: 60px;
+    background-color:var(--color-fade);
+    color:rgb(156, 156, 156)
+}
+.searchbutton{
+    color:var(--color-chocolate);
+    border-radius: 5px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border:1px solid var(--color-fade);
+    background-color:var(--color-fade);
+    width:20%;
+    align-items: center;
+    justify-content: center;
+    height:50px
+}
+
+.searchbutton span{
+    width:100%;
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+@media screen and (min-width:0px) and (max-width:250px){
+    .search_input{
+        margin-right: 10px;
+        width:80%;
+        font-size: 1rem;
+        text-align: left;
+        height: 60px;
+        background-color:var(--color-fade);
+    }
+    .searchbutton{
+        color:var(--color-chocolate);
+        border-radius: 5px;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+        border:1px solid var(--color-fade);
+        background-color:var(--color-fade);
+        width:20%;
+        align-items: center;
+        justify-content: center;
+        height:50px;
+    }
+}
+@media screen and (min-width:251px) and (max-width:500px){
+    .search_input{
+        margin-right: 10px;
+        width:80%;
+        font-size: 1rem;
+        text-align: left;
+        height: 60px;
+        background-color:var(--color-fade);
+        color:rgb(156, 156, 156);
+    }
+    .searchbutton{
+        color:var(--color-chocolate);
+        border-radius: 5px;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+        border:1px solid var(--color-fade);
+        background-color:var(--color-fade);
+        width:20%;
+        align-items: center;
+        justify-content: center;
+        height:50px;
+    }
+}
+
+

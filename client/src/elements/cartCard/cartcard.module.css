@@ -1,0 +1,88 @@
+
+ .cartCard{
+    min-width:280px;
+    overflow: hidden;
+    margin:10px;
+    height:400px;
+}
+.cartImageCon{
+    width:100%;
+    height:60%
+    
+
+}
+.cartCard  .cartImage{
+    width:100%;
+    height: 90%;
+}
+/* info */
+.cartCard .info{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.cartCard .inforight{
+    width:50%;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 5px;
+
+}
+.cartCard .inforight h3{
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 8px;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+.cartCard .infoleft h3{
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+.cartCard .infoleft{
+    width:50%;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding:5px;
+}
+/*  button */
+.cartbutton{
+    height:50px;
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+}
+.add{
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    width:45%;
+    height:100%;
+    background-color: var(--color-fade);
+    border-radius: 5px;
+    border:1px solid rgb(200,200,200)
+
+}
+.subtract{
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    width:45%;
+    height:100%;
+    background-color: var(--color-fade);
+    border-radius: 5px;
+    border:1px solid rgb(200,200,200)
+}
+.add p,.subtract p{
+    align-self: center;
+    justify-self: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    color:var(--color-chocolate);
+    margin-bottom:10%;
+}

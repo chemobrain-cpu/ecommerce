@@ -1,0 +1,18 @@
+  /*styling state */
+  .state{
+    min-width: 200px;
+    background-color: var(--color-fade);
+    height:55px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    color:var(--color-chocolate);
+    font-weight:500;
+    
+}
+.stateactive{
+    border-radius: 0px;
+    border-bottom: 5px solid var(--color-chocolate);
+
+}

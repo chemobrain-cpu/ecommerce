@@ -1,0 +1,34 @@
+/*  send reply */
+.sendreply{
+    display:flex;
+    gap:2px;
+    margin-bottom: 10px;
+    justify-content: space-around;
+}
+.sendreply input{
+    border-radius:1px solid var(--color-chocolate);
+    background-color: var(--color-fade);
+    min-height:60px;
+    width:78%;
+    border-radius:5px;
+    text-align: center;
+    box-sizing: border-box;
+    padding:10px;
+    word-wrap: break-word;
+
+}
+.sendreply div{
+    width:15%;
+    height:60px;
+    border-radius:5px;
+    background-color: var(--color-chocolate);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.sendreply div span{
+    color:white;
+    transform: rotate(320deg);
+
+}

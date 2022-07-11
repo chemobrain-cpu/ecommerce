@@ -1,0 +1,263 @@
+.togglemenu{
+    display: flex;
+    height:70px;
+    padding-bottom: 10px;
+    justify-content:space-between;
+    position: fixed;
+    z-index:3;
+    width:100vw;
+    background:var(--color-background);
+    margin:0px;
+    width:100%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom: 10px;
+  
+   
+   
+}
+.togglemenu    .left{
+    width:50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.screen{
+    background-color: var(--background-color);
+    height:100vh
+}
+
+.formscreen .right{
+    width:50%;
+    margin-left:40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+
+}
+.color{
+    color:rgb(180, 60, 126)
+}
+/* styling the form section */
+.form_space{
+    margin-top:200px;
+    height:10px;
+    width:50px;
+    display:none;
+
+}
+
+.form_header{
+    width:90%;
+    height:100px;
+    border-radius:5px;
+    display:flex;
+    align-items: center;
+    gap:1rem;
+    margin-right: auto;
+    margin-left: auto;
+    background-color:rgb(231, 231, 231);
+    justify-content: center;
+
+}
+
+
+.input{
+    height:10px
+}
+
+.button_containers{
+    display:flex;
+    width:90%;
+    height:100px; 
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    align-self: center;
+}
+
+.button_containers button{
+    width:100%;
+    height:60px;
+    padding:10px;
+    box-sizing:border-box;
+    border-radius: 10px;
+    background-color:#a06d64;
+    color:white;
+    font-size: 1.5rem;
+}
+/* styling the comment section */
+
+.formscreen{
+    display:flex;
+    align-items: center;
+    width:100%;
+}
+.formscreen .img{
+    width:50%;
+    position: fixed;
+    top:35%;
+
+}
+
+
+
+/* mobile size*/
+@media screen and (min-width:0px) and (max-width:700px){
+    .togglemenu{
+        display: flex;
+        height:70px;
+        padding-bottom: 10px;
+        justify-content:space-between;
+        position: fixed;
+        z-index:3;
+        width:100vw;
+        background:var(--color-background);
+        margin:0px;
+        width:100%;
+        margin-left:auto;
+        margin-right:auto;
+        margin-bottom: 10px;
+      
+       
+       
+    }
+    .togglemenu    .left{
+        width:50%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    
+    }
+    .formscreen{
+       
+    }
+    .formscreen .img{
+        display:none;
+    }
+    .formscreen   .right{
+         width:100vw;
+         display:flex;
+         flex-direction:column;
+         gap:1rem;
+         align-items:'center';
+         align-self: center;
+         margin-top: 20%;
+         margin-left:0%;
+        
+    
+    }
+    .space{
+        width:300px
+    }
+  
+  
+   }
+   /* mobile size*/
+@media screen and (min-width:700px) and (max-width:1000px){
+    .togglemenu{
+        display: flex;
+        height:70px;
+        padding-bottom: 10px;
+        justify-content:space-between;
+        position: fixed;
+        z-index:3;
+        width:100vw;
+        background:var(--color-background);
+        margin:0px;
+        width:100%;
+        margin-left:auto;
+        margin-right:auto;
+        margin-bottom: 10px;
+      
+       
+       
+    }
+    .togglemenu    .left{
+        width:50%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    
+    }
+    .screen{
+        justify-content: center;
+      
+    }
+   
+    .formscreen .right{
+        width:50%;
+        margin-left:45%;
+        margin-top:20px;
+    
+    }
+    .space{
+        display:block;
+        height: 100px;
+        
+    }
+    
+.form_header{
+    width:90%;
+    height:100px;
+    border-radius:5px;
+    display:flex;
+    align-items: center;
+    gap:1rem;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top:70px;
+    text-align: center;
+    background-color:rgb(231, 231, 231);
+    justify-content: center;
+
+}
+   
+    
+  
+    /* styling the side-bar section */
+   
+}
+
+/* mobile size*/
+@media screen and (min-width:1001px){
+   
+   
+    .formscreen .right{
+        width:40%;
+        margin-left:45%;
+        margin-top:40px;
+    
+    }
+    .formscreen .img{
+        width:50%;
+        position: fixed;
+        top:30%;
+    
+    }
+    .space{
+        display:block;
+        height:100px
+    }
+    .form_header{
+        width:90%;
+        height:100px;
+        border-radius:5px;
+        display:flex;
+        align-items: center;
+        gap:1rem;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top:70px;
+        text-align: center;
+        background-color:rgb(231, 231, 231);
+        justify-content: center;
+    
+    }
+    
+}
+/* responsive designs */

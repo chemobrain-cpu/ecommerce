@@ -1,0 +1,170 @@
+
+
+/*  styling the user profile region*/
+.userprofile{
+    height:150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+    justify-content: space-around;
+    margin:20px 0px 20px 0px;
+    padding: 5px 1px 5px 1px;
+    border-radius: 5px;
+    margin-right:auto;
+    margin-left: auto;
+    padding-top: 40px;
+    text-align: center;
+   
+}
+.userprofile .h2{
+    color:var(--color-chocolate);
+    font-weight: 200;
+    width:100%;
+    margin-bottom: 10px;
+}
+
+
+/* edit section */
+.editprofile{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+
+}
+.editprofile button{
+    height:55px;
+    background-color: var(--color-fade);;
+    width:150px;
+    color:var(--color-chocolate);
+    border-radius:5px;
+    font-weight: 700;
+    
+}
+
+.image{
+    width:100px;
+    height:100px;
+    border-radius:100px;
+    margin-bottom: 20px;
+}
+/* styling the toggle switch section*/
+.togglecontainer{
+    height:100px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 20px;
+    
+}
+
+
+/* styling the bottom section */
+.bottom{
+    margin-top:60px;
+    margin-left:5px;
+    position: relative;
+    
+
+}
+.bottom .link{
+    display:flex;
+    height:60px;
+    align-items: center;
+    width:50%;
+    margin:10px auto 10px auto;
+    padding:10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+
+}
+.bottom .active::before{
+    content:'';
+    width:10px;
+    height:50px;
+    background-color: var(--color-pink);
+    
+}
+
+.bottom .active{
+    
+    background-color:#d3d2d1;
+}
+
+
+
+/* End of styling the block */
+
+.active h3,.active span{
+    
+    color:rgb(138, 138, 138);
+}
+
+
+
+/*styling small block menu*/
+.smallMenuCon{
+    width:90%;
+    margin-left: auto;
+    margin-right:auto;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:2rem
+
+}
+.smallMenu{
+    height:50px;
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    font-weight: 500;
+    color:rgb(94, 94, 94);
+    font-size: 13px;
+    font-weight:500;
+    border:1px solid rgb(231, 231, 231);
+    border-radius: 5px;
+    padding-left: 2px;
+    text-align: center;
+  
+
+}
+.smallMenu:hover{
+    background:var(--color-fade);
+    
+    color:var(--color-chocolate)
+
+}
+.actives{
+    background:var(--color-fade);
+    color:var(--color-chocolate)
+
+}
+
+
+@media screen and (min-width:0px) and (max-width:700px){
+    
+    .sideBar{
+        padding-top: 45px;
+    }
+
+
+    
+}
+    
+@media screen and (min-width:500px) and (max-width:900px){
+
+
+.userprofile .username{
+    color:#afafae;
+    align-self: center;
+    font-size: 1.3rem;
+    width:100%
+    
+}
+}
+
+
+

@@ -1,0 +1,227 @@
+
+.testimonialContainer{
+  
+    background-color: var(--color-chocolate);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height:80vh;
+    padding-bottom: 0px;
+    padding-top: 50px;
+    gap:10vh;
+    position: relative;
+
+}
+
+.testimonialContainer h2{
+    color:rgb(117, 148, 160);
+    font-size: 2.5rem;
+    text-align: center;
+
+}
+
+.testimonial{
+    width:400px;
+    height:270px;
+    background-color: #555b68;
+    border-radius: 5px;
+    text-align: center;
+    padding-top:10px;
+    padding-bottom: 10px;
+    box-shadow: 3px 5px 5px 3px rgba(163, 148, 148,0.5);
+
+}
+.imageContainer{
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.testimonialImage{
+    width:100px;
+    height:100px;
+    border-radius:90px;
+    border:2px solid var(--color-chocolate)
+}
+.testimonial h2{
+    color:rgb(216, 216, 52);
+    font-weight: 900;
+    font-size: 1.7rem;
+    margin-bottom: 10px;
+
+}
+.testimonial p{
+    color:var(--color-fade);
+    font-weight: 400;
+    font-size: 1.2rem;
+    text-align: center;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.testimonial p img{
+    display: inline-block;
+
+
+}
+.testimonialContainer .buttonContainer{
+    display:flex;
+    gap:10px
+}
+.testimonialContainer .buttonContainer button{
+    width:50px;
+    height:5px;
+}
+.leftbutton{
+    width:40px;
+    height:100px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top:50%;
+    left:5%;
+    background-color: rgba(255, 254, 254,0.2);
+    border-radius: 10px;
+
+}
+.rightbutton{
+    width:40px;
+    height:100px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top:50%;
+    right:5%;
+    background-color: rgba(255, 254, 254,0.2);
+    border-radius: 10px;
+
+}
+.leftbutton:hover,.rightbutton:hover{
+    background-color: rgba(219, 219, 219, 0.2);
+
+
+}
+.leftbutton p,.rightbutton p{
+    font-size: 2rem;
+    color:white;
+    font-weight: 900;
+
+
+}
+
+@media screen and (min-width:0px) and (max-width:700px){
+    /*  testimonial */
+    .testimonialContainer{
+        background-color: var(--color-chocolate);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height:80vh;
+        padding-bottom: 30px;
+        padding-top: 50px;
+        gap:10vh;
+        position: relative;
+    
+    }
+    .testimonial{
+        width:400px;
+        height:250px;
+        border-radius: 5px;
+        text-align: center;
+        padding-top:10px;
+        padding-bottom: 10px;
+        background-color: var(--color-chocolate);
+        box-shadow: none;
+    
+    }
+    .testimonialImage{
+        width:110px;
+        height:110px;
+        border-radius:110px;
+        border:2px solid skyblue
+    }
+    .testimonialContainer h2{
+        color:rgb(117, 148, 160);
+        font-size: 1.7rem;
+        font-family: monospace;
+        text-align: center;
+        width:80%;
+        margin-right:10%;
+        margin-left: 10%;
+    
+    }
+
+    /* buttons */
+    .testimonialContainer .buttonContainer{
+        display:flex;
+        gap:10px
+    }
+    .testimonialContainer .buttonContainer button{
+        width:50px;
+        height:5px;
+        background-color: var(--color-fade);
+        background-color: grey;
+    }
+    .leftbutton{
+        width:40px;
+        height:100px;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top:40%;
+        left:1%;
+        background-color: var(--color-chocolate);
+        border-radius: 10px;
+    
+    }
+    .rightbutton{
+        width:40px;
+        height:80px;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top:40%;
+        right:4%;
+        background-color: var(--color-chocolate);
+        border-radius: 10px;
+    
+    }
+    .leftbutton:hover,.rightbutton:hover{
+        background-color: rgba(219, 219, 219, 0.2);
+    
+    
+    }
+    .testimonial h2{
+        color:rgb(216, 216, 52);
+        font-weight: 900;
+        font-size: 1.3rem;
+        margin-bottom: 10px;
+    
+    }
+    .testimonial p{
+        font-size: 1rem;
+        margin-bottom: 10px;
+        width:70%;
+        margin-right: 15%;
+        margin-left: 15%;
+        text-align: center;
+    
+    }
+    .leftbutton p,.rightbutton p{
+        font-size: 2rem;
+        color:white;
+        font-weight: 900;
+    
+    
+    }
+
+
+}

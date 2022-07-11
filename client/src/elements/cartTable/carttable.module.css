@@ -1,0 +1,24 @@
+/*  table*/
+.tablecon{
+    width:80%;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    position: absolute;
+    top:-5%
+    
+}
+td{
+    width:50px;
+    height:70px;
+    border:1px solid var(--color-fade);
+    color:var(--color-chocolate);
+    font-weight: 400;
+    padding:20px;
+    font-size: 1.2rem;
+}
+.dashboardname h2{
+    font-size: 2.2rem;
+    color:var(--color-chocolate);
+    font-weight: 100;
+    margin-bottom: 10px;
+}

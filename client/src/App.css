@@ -1,0 +1,109 @@
+/*poppins font import stays here*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* declaring and using root variables in css*/
+:root{
+    --color-dark-variant:#677483;
+    --color-Text:rgb(141, 141, 141);
+    --color-pink:#3b4457;
+    --color-chocolate:#394050;
+    --color-form:rgb(75, 75, 75);
+    --card-border-radius:0.6rem;
+    --box-shadow:10px 8px 5px rgb(241, 241, 241);
+    --box-hover-shadow:10px 8px 5px rgb(218, 218, 218);
+    --color-fade:#d0d4db;
+     --color-background:#dfe3ec;
+}
+::placeholder{
+    font-size: 1.3rem;
+    padding-left:20%
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+/*general styling for all element */
+
+*{
+    margin:0;
+    padding: 0;
+    outline: 0;
+    appearance: none;
+    border:none;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+html{
+    font-size: 14px;
+}
+body{
+    width:100vw;
+    height:100vh;
+    font-family: poppins,sans-serif;
+    font-size: 0.88rem;
+    background:var(--color-background);
+    user-select: none;
+    overflow-x: hidden;
+    margin:0;
+    padding:0;
+
+}
+
+/* general styling for some specific element*/
+a{
+    color:var(--color-dark);
+    
+    font-weight: 900;
+    color:black;
+}
+img{
+    display: block;
+    width: 100%;
+}
+h1{
+    font-weight: 800;
+    font-size: 1.8rem;
+}
+h2{
+    font-size: 1.4rem;
+}
+h3{
+    font-size: 0.87rem;
+    
+    font-weight: 900;
+    color:black;
+}
+h5{
+    font-size: 0.77rem;
+}
+small{
+    font-size: 0.75rem;
+}
+.profile-photo{
+    width:3rem;
+    height:3rem;
+    border-radius: 50%;
+    overflow:hidden;
+
+
+}
+.text-muted{
+    color:var(--color-info-dark)
+}
+p{
+    color:var(--color-dark-variant)
+}
+h1,h2,h3,h4,h5,h6,div,p,button{
+    font-family: poppins;
+}
+th{
+    color:rgb(49, 82, 95);
+    font-weight: 800;
+    font-size: 1.2rem;
+}
+.center{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}

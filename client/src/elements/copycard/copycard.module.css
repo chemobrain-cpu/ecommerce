@@ -1,0 +1,16 @@
+.input{
+    width:83%;
+    height:55px;
+    border-radius: 10px;
+    font-weight: 700;
+    color: #afafae;
+}
+
+.button{
+    width:15%;
+    height:55px;
+    border-radius: 5px;
+    background-color: var(--color-chocolate);
+    color:white;
+    font-weight: 500;
+}

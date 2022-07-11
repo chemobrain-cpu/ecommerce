@@ -1,0 +1,228 @@
+.headerContainer{
+    border-bottom: 1px solid var(--color-fade);
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 20px;
+    padding-right:20px;
+}
+.left{
+    width:60%;
+    display: flex;
+    align-items: center;
+    gap:1rem;
+    justify-content: center;
+}
+
+/* menu configuration*/
+.mobilemenu{
+    display:none
+}
+.mobilemenu:checked~ .sidebar{
+    left:0%;
+    transition: 3s ease;
+    padding-left: 20px;
+}
+.sidebar{
+    background-color: var(--color-background);
+    position: absolute;
+    height: 100vh;
+    overflow-y: scroll;
+    top:0%;
+    left:-50%;
+    width:58%;
+    border-right: 1px solid var(--color-fade);;
+
+}
+
+.left h2{
+    color:var(--color-chocolate);
+    font-weight: 600;
+    font-size: 3rem;
+    margin-top: 5px;
+   
+}
+.searchContainer{
+height:70px;
+overflow-y: hidden;
+}
+.right label{
+    background-color: var(--color-chocolate);
+    width:50px;
+    height:50px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    color:white
+}
+.cartContainer{
+    width:150px;
+    height:55px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.cartContainer span{
+    font-size: 3.2rem;
+    position: absolute;
+    
+
+}
+.cartContainer .cartNumber{
+    background-color: var(--color-pink);
+    z-index: 2;
+    width:40px;
+    height:40px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top:0%;
+    left:50%;
+
+
+}
+.cartContainer .cartNumber h3{
+    color:white;
+    font-size: 1.5rem;
+}
+@media screen and (min-width:0px) and (max-width:300px){
+    .headerContainer{
+        background-color: red;
+    }
+    .headerContainer .left{
+        width:90%;
+        display: flex;
+        align-items: center;
+        gap:1rem;
+    }
+    .headerContainer .right{
+        width:10%;
+    }
+    .left h2{
+        color:var(--color-chocolate);
+        font-weight: 600;
+        font-size: 1.8rem;
+        margin-top: 5px;
+       
+    }
+    .headerContainer .right label{
+        width: 40px;
+        height:40px
+    }
+    /* menu */
+    .cartContainer{
+        display:none
+    }
+
+   
+    
+}
+
+@media screen and (min-width:301px) and (max-width:550px){
+    
+    .headerContainer .left{
+        width:85%;
+        display: flex;
+        align-items: center;
+        gap:1rem;
+        justify-content: center;
+    }
+    .headerContainer .right{
+        width:15%;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .left h2{
+        color:var(--color-chocolate);
+        font-weight: 600;
+        font-size: 1.8rem;
+        margin-top: 5px;
+       
+    }
+    .cartContainer{
+        display:none
+    }
+    
+}
+
+@media screen and (min-width:551px) and (max-width:700px){
+    .headerContainer{
+        /*background-color: red;*/
+    }
+    .headerContainer .left{
+        width:80%;
+        display: flex;
+        align-items: center;
+        gap:5rem;
+        justify-content: space-around;
+    }
+    .headerContainer .right{
+        width:20%;
+        display:flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .sidebar{
+        width:10%;
+    }
+    
+    .cartContainer{
+        display:none
+    }
+    
+}
+@media screen and (min-width:701px) and (max-width:900px){
+    .headerContainer{
+        background-color: red;
+    }
+    .headerContainer .left{
+        width:80%;
+        display: flex;
+        align-items: center;
+        gap:25%;
+        justify-content: space-around;
+    }
+    .headerContainer .right{
+        width:20%;
+        display:flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .headerContainer .right label{
+        display:none
+    }
+    .sidebar{
+        display:none
+    
+    }
+    
+}
+@media screen and (min-width:901px){
+    
+    .headerContainer .left{
+        width:63%;
+        display: flex;
+        align-items: center;
+        gap:25%;
+
+        justify-content: space-around;
+    }
+    .headerContainer .right{
+        width:20%;
+        display:flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .headerContainer .right label{
+        display:none
+    }
+    .sidebar{
+        display:none
+    
+    }
+    
+}

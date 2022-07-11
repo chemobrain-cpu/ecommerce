@@ -1,0 +1,27 @@
+/*styling the card input section*/
+
+.cardinput{
+    height:9vh;
+    display:flex;
+    align-items:stretch;
+    padding:0px;
+    position:fixed;
+    top:90vh;
+    gap:0.5rem;
+    background-color: var(--color-background);
+    
+    
+}
+.cardinput input{
+    height:100%;
+    width:85%;
+    border-radius: 15px;
+    background-color: white;
+
+}
+.cardinput button{
+    background-color:var(--color-chocolate);
+    width:12%;
+    color: white;
+    border-radius:10px
+}

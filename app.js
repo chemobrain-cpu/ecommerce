@@ -55,12 +55,16 @@ app.use(ProductsRoutes)
 app.use(UserRoutes)
 
 __dirname = path.resolve()
-if(process.env.NODE === "production"){
-    app.use(express.static(path.join(__dirname,'../client/build')))
+if(process.env.NODE  ){
+    app.use(express.static(path.join(__dirname,'./client/build')))
     
 
     app.use("*",(req,res)=>{
-        res.sendFile(path.resolve(__dirname,"../client","build","index.html"))
+        res.sendFile(path.resolve(__dirname,"./client","build","index.html"))
+    })
+}else{
+    app.get("/",(req,res)=>{
+        res.send("API is running")
     })
 }
 

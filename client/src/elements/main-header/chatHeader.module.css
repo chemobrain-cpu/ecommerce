@@ -1,0 +1,237 @@
+.headerContainer{
+    border-bottom: 1px solid var(--color-fade);
+    display:flex;
+    align-items: center;
+    padding-left: 5px;
+    padding-right:20px;
+    height:14vh
+}
+.headerContainer .left{
+    width:20%;
+    display: flex;
+    align-items: center;
+    gap:5px;
+    border:1px solid var(--color-fade);
+    height: 100%;
+}
+
+.headerContainer .left h2{
+    color:var(--color-chocolate);
+    font-weight: 200;
+    font-size: 2rem;
+    margin-top: 5px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.headerContainer .left h2 span{
+    color:var(--color-pink)
+}
+.headerContainer .right{
+    width:70%;
+    display: flex;
+    gap:2rem;
+    height: 100%;
+    padding-left: 10px;
+    padding: 15px
+}
+
+
+/* menu configuration*/
+.mobilemenu{
+    display:none
+}
+.mobilemenu:checked~ .sidebar{
+    left:0%;
+    transition: 3s ease;
+}
+.sidebar{
+    background-color: var(--color-background);
+    position: absolute;
+    height: 100vh;
+    overflow-y: scroll;
+    top:0%;
+    left:-65%;
+    width:65%;
+    border-right: 1px solid var(--color-fade);;
+
+}
+.right label{
+    background-color: var(--color-chocolate);
+    width:50px;
+    height:50px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    color:white;
+    display:none
+}
+
+/*  user info */
+.right .userInfo{
+    width:70%;
+    height:100%;
+    display:flex;
+    gap:10px;
+    align-items: center;
+}
+.right .userInfo img{
+    width:60px;
+    height:60px;
+    border-radius:60px
+}
+.right .userInfo .info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:1px
+}
+.right .userInfo h3{
+    font-size: 1.5rem;
+    color: var(--color-chocolate);
+    font-weight: 600;
+}
+.right .userInfo .status{
+    display:flex;
+    gap:1rem;
+    align-items: center;
+}
+.right .userInfo .status p{
+    font-weight: 400;
+}
+
+
+
+
+@media screen and (min-width:0px) and (max-width:300px){
+    .headerContainer{
+    }
+    .headerContainer .left{
+      
+        display:none
+    }
+    .headerContainer .right{
+        width:100%;
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    
+    
+.right label{
+    background-color: var(--color-chocolate);
+    width:50px;
+    height:50px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    color:white;
+    align-self: center;
+    justify-content: center;
+    
+}
+/*  user info */
+.right .userInfo{
+    width:95%;
+    height:100%
+}
+.right .userInfo h3{
+    font-size: 1rem;
+    color: var(--color-chocolate);
+    font-weight: 600;
+}
+.right .userInfo .status p{
+    display:none
+}
+
+   
+    
+}
+
+@media screen and (min-width:301px) and (max-width:400px){
+    .headerContainer{
+    }
+    .headerContainer .left{
+      
+        display:none
+    }
+    .headerContainer .right{
+        width:100%;
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    
+    
+.right label{
+    background-color: var(--color-chocolate);
+    width:50px;
+    height:50px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    color:white;
+    align-self: center;
+    justify-content: center;
+    
+}
+/*  user info */
+.right .userInfo{
+    width:95%;
+    height:100%
+}
+.right .userInfo h3{
+    font-size: 1rem;
+    color: var(--color-chocolate);
+    font-weight: 600;
+}
+.right .userInfo .status p{
+    
+}
+
+   
+    
+}
+
+@media screen and (min-width:401px) and (max-width:600px){
+    
+    .headerContainer .left{
+        width:90%;
+        display: flex;
+        align-items: center;
+        gap:1rem;
+        justify-content: center;
+        display:none
+    }
+    .headerContainer .right{
+        width:100%;
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .right label{
+        background-color: var(--color-chocolate);
+        width:50px;
+        height:50px;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        color:white;
+        align-self: center;
+        justify-content: center;
+        
+    }
+  
+
+
+    
+}
+
+

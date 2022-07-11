@@ -1,0 +1,53 @@
+.form_inputcontainer{
+    width:90%;
+    border-radius: 10px;
+    display:flex;
+    gap:1rem;
+    flex-direction: column;
+    padding-top:10px;
+    align-self: center;
+
+}
+
+.form_inputcontainer .categoryhead{
+    display:flex;
+    margin-left:5px;
+    gap:1.5rem
+}
+.form_inputcontainer .categoryhead h3{
+    font-weight: 700;
+    color:rgb(145, 144, 144);
+    font-size: 1.3rem;
+}
+
+
+.form_inputcontainer .categoryhead span{
+    width: 40px;
+    height:40px;
+    border-radius:5px;
+    background-color: rgb(112, 80, 104);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white
+
+}
+.form_inputcontainer .categorybody input{
+    background-color:var(--color-fade);
+    width:100%;
+    height:75px;
+    text-align: center;
+    border-radius:5px;
+    color:var(--color-form);
+    font-size: 1.2rem;
+    font-weight:600;
+}
+
+
+.form_inputcontainer h3{
+    margin-top: 5px;
+    font-size:1.3rem;
+    font-weight: 400;
+    color:rgb(145, 144, 144)
+    
+}

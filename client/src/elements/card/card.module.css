@@ -1,0 +1,16 @@
+.cardContainer{
+    background-color: white;
+    border-radius: 5px;
+    box-shadow:var(--box-shadow);
+    padding:20px 15px 20px 15px;
+    box-sizing: border-box;
+    width:99%;
+    margin:1px auto 1px auto;
+    transition: 3s ease;
+}
+
+.cardContainer:hover{
+    box-shadow:var(--box-hover-shadow);
+    background-color: rgb(243, 243, 243);
+
+}

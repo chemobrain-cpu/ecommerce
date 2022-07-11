@@ -1,0 +1,26 @@
+/*product section */
+
+.productsection{
+    padding-top:0px;
+    padding-bottom: 60px;
+    padding-left: 80px;
+    padding-right:80px
+}
+
+
+.productContainer{
+    gap:0px
+}
+.productsection2{
+    padding-top:0px;
+    padding-bottom: 60px;
+    margin-top: -20px;
+}
+@media screen and (min-width:0px) and (max-width:700px){
+.productsection{
+    padding-top:0px;
+    padding-bottom: 60px;
+    padding-left: 30px;
+    padding-right:30px
+}
+}

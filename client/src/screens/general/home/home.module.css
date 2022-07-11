@@ -1,0 +1,94 @@
+
+/* collection section */
+.collection{
+    background-color:var(--color-chocolate);
+    margin-top:0px;
+    padding-top:20px;
+    padding-bottom: 20px;
+    align-items: center;
+    height:60vh;
+    gap:100px
+}
+.collection .imageCard{
+    width:450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.collection .collectionImage{
+    width:200px;
+    margin-bottom: 20px;
+    
+}
+.collection p{
+    color:white;
+    width:80%;
+    text-align: center;
+    font-weight: 500;
+    height:50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border:1px solid var(--color-fade)
+    
+}
+.collection p:hover{
+    background-color: var(--color-fade);
+    color:var(--color-chocolate)
+    
+}
+
+
+@media screen and (min-width:0px) and (max-width:700px){
+
+/* */
+.description{
+    width:100vw;
+    height:50vh;
+    margin-top: 0px;
+    position:relative;
+}
+.description .image{
+    width:100%;
+    height:60vh;
+    background:linear-gradient(black,black);
+    filter: brightness(50%);
+}
+.description h2{
+    position:absolute;
+    top:40%;
+    color:var(--color-fade);
+    width:100%;
+    font-size: 2rem;
+
+}
+.description p{
+    position:absolute;
+    top:55%;
+    color:var(--color-fade);
+    width:100%;
+    font-size: 1rem;
+
+}
+.description .button{
+    width:100%;
+    position:absolute;
+    text-align: center;
+    top:70%;
+    font-weight: 500;
+
+}
+.description .button button{
+    width:130px;
+    height:60px;
+    background-color: var(--color-chocolate);
+    color:white;
+    border-radius: 5px;
+
+}
+}
+
+

@@ -1,0 +1,85 @@
+.headerContainer{
+    border-bottom: 1px solid var(--color-fade);
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.left{
+    width:20%;
+    display: flex;
+    align-items: center;
+    gap:1rem;
+    justify-content: flex-start;
+}
+
+
+
+
+
+
+
+.left h2{
+    color:var(--color-chocolate);
+    font-weight: 900;
+    font-size: 1.5rem;
+    margin-top: 5px;
+    display:flex;
+   
+}
+.left h2 span{
+    color:var(--color-pink)
+}
+.right{
+    width:50%;
+    display: flex;
+    justify-content: flex-end;
+}
+.right .button{
+    width:90px;
+    height:45px;
+    border-radius:5px;
+    background-color: var(--color-chocolate);
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 200;
+}
+
+
+
+@media screen and (min-width:0px) and (max-width:300px){
+    .headerContainer{
+        background-color: var(--color-background);
+    }
+    .headerContainer .left{
+        width:50%;
+        display: flex;
+        align-items: center;
+        gap:20%;
+        justify-content: space-between;
+    }
+    .headerContainer .right{
+        width:30%;
+    }
+    .left h2{
+        color:var(--color-chocolate);
+        font-weight: 200;
+        font-size: 1.8rem;
+        margin-top: 5px;
+       
+    }
+    .headerContainer .right label{
+        width: 40px;
+        height:40px
+    }
+    /* menu */
+    .cartContainer{
+        display:none
+    }
+
+   
+    
+}

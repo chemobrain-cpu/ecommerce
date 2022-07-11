@@ -1,0 +1,168 @@
+
+.addressContainer{
+    width:100%;
+    height:50vh;
+    position: relative;
+
+}
+.addressContainer .iframe{
+    z-index: 1;
+
+}
+.address{
+    width:100vw;
+    overflow: hidden;
+    width:100%;
+    background-color: #29261e;
+    background-color: black;
+    display:flex;
+    padding-top: 30px;
+}
+
+/* address info section*/
+.addressInfo{
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+    padding-bottom: 20px;
+    align-items: center;
+}
+
+.address_one{
+    align-self: center;
+    width:80%;
+}
+
+.address_one h2{
+    color:rgb(207, 126, 97);
+    padding-bottom: 20px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-decoration: underline;
+}
+.address_one p{
+    width:200px;
+    justify-self: center;
+    font-size: 1.2rem;
+    color:var(--color-fade)
+}
+
+.address_two{
+    align-self: center;
+    width:80%;
+}
+
+.address_two h2{
+    color:rgb(207, 126, 97);
+    padding-bottom: 20px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-decoration: underline;
+}
+.address_two p{
+    width:200px;
+    justify-self: center;
+    font-size: 1.2rem;
+    color:var(--color-fade)
+}
+
+.address_contact{
+    align-self: center;
+    width:80%;
+}
+
+.address_contact h2{
+    color:rgb(207, 126, 97);
+    padding-bottom: 20px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.address_contact p{
+    width:200px;
+    justify-self: center;
+    font-size: 1.2rem;
+    color:var(--color-fade)
+}
+
+
+
+
+/*links section*/
+.links{
+    width:50%;
+    display: flex;
+    flex-direction: column;
+}
+.links h2{
+    text-decoration: underline;
+    margin-bottom: 35px;
+    padding-bottom: 20px;
+    color:rgb(207, 126, 97);
+    font-size:1.5rem;
+    font-weight: 400;
+    align-self: flex-start;
+    padding-left: 50px;
+}
+.links div{
+    width:50%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+
+}
+.links .link span{
+    font-size: 1.1rem;
+    border:1px solid var(--color-fade);
+    border-radius: 5px;
+    padding:10px;
+    color:white;
+    width:120px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.links .link span:hover{
+    background-color: var(--color-fade);
+    color:var(--color-chocolate);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:0px) and (max-width:700px){
+    
+.address{
+    flex-direction:column
+}
+    /* address info section*/
+.addressInfo{
+    width:100%
+}
+/*links section*/
+.links{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.links div{
+    width:80%;
+    display: flex;
+    margin-bottom: 30px;
+    gap:10px;
+    align-self: center;
+
+}
+}

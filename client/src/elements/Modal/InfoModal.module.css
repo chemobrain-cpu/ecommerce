@@ -1,0 +1,131 @@
+.modal{
+    width:50%;
+    height:50%;
+    background-color: var(--background-fade);
+    position:fixed;
+    top: 25%;
+    left: 25%;
+    right:25%;
+    bottom:25%;
+    z-index:3;
+    border-radius: 10px;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap:20px;
+    padding:0px;
+}
+.cancel{
+    display:flex;
+    color:var(--color-chocolate);
+    align-items: flex-start;
+    justify-content: flex-end;
+    margin-top: 0px;
+}
+
+.Image{
+    width:80px;
+    height:80px;
+    overflow: hidden;
+    align-self: center;
+}
+.info{
+    height:70px;
+    text-align: center;
+    
+
+}
+.info p{
+    color:var(--color-chocolate);
+    font-size: 1.2rem;
+    
+}
+/* loader */
+.loader{
+    color:var(--color-chocolate);
+
+}
+.modal .p{
+    font-weight: 900;
+    color:var(--color-chocolate);
+
+}
+/*  error section */
+.loader{
+    color:var(--color-chocolate);
+
+}
+.modal .p{
+    font-weight: 900;
+    color:rgb(161, 108, 89);
+    font-size: 1rem;
+}
+.buttonContainer{
+    display:flex;
+    gap:100px
+
+}
+.button{
+    display:flex;
+    width:80px;
+    height:50px;
+    border-radius: 5px;
+    background-color: var(--color-chocolate);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:white
+
+}
+.button p{
+    font-size:1rem;
+    display:flex;
+    margin-top: 30%;
+}
+
+
+
+@media screen and (min-width:0px) and (max-width:500px){
+    .modal{
+        width:80%;
+        height:50%;
+        background-color: var(--background-fade);
+        position:fixed;
+        top:25%;
+        left:10%;
+        bottom:25%;
+        right:10%;
+        z-index:3;
+        border-radius: 10px;
+        display:flex;
+        justify-content: center;
+        flex-direction: column;
+        gap:20px;
+        padding:0px
+    }
+
+}
+@media screen and (min-width:501px) and (max-width:900px){
+    .modal{
+        width:40%;
+        height:50%;
+        background-color: var(--background-fade);
+        position:fixed;
+        top:25%;
+        bottom:25%;
+        left:30%;
+        right:30%;
+        z-index:3;
+        border-radius: 10px;
+        display:flex;
+        justify-content: center;
+        flex-direction: column;
+        gap:20px;
+        padding:0px
+    }
+
+}
+
+
+

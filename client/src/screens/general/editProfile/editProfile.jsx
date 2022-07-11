@@ -160,7 +160,7 @@ let EditProfile = () => {
                 <div className={styles.right} >
 
                     <Space className={styles.space} />
-                    <div style={{ height: '500px' }}>
+                    <div style={{ height: '300px' }}>
                         <p>.</p>
 
                     </div>

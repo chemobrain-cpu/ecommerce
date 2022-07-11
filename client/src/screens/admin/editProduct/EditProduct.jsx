@@ -174,7 +174,7 @@ let EditProduct = () => {
                 </div>
 
                 <div className={styles.right} >
-                    <div style={{ height: '800px' }}>
+                    <div style={{ height: '600px' }}>
                         <p>.</p>
 
                     </div>

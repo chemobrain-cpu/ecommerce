@@ -53,9 +53,9 @@ router.post("/login",[
     .withMessage("password is required"),
    
 ],loginUser)
-router.get("/users/:id",getUser)
-router.get("/userByTokens",getUserFromJwt)
-router.get("/adminByTokens",getAdminFromJwt)
+router.get("/user/:id",getUser)
+router.get("/userByToken",getUserFromJwt)
+router.get("/adminByToken",getAdminFromJwt)
 
 
 

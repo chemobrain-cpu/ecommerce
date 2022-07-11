@@ -85,7 +85,7 @@ export const checkIfIsLoggedIn = () => {
       return
     }
     if(user.admin){
-      response = await fetch(`https://localhost:80808/adminByTokens`, {
+      response = await fetch(`/adminByToken`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -94,7 +94,7 @@ export const checkIfIsLoggedIn = () => {
     })
 
     }else{
-      response = await fetch(`https://localhost:80808/userByTokens`, {
+      response = await fetch(`/userByTokens`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -132,7 +132,7 @@ export const adminsignup = (data) => {
   return async (dispatch, getState) => {
 
     try {
-      const response = await fetch(`https://localhost:80808/adminSignup`, {
+      const response = await fetch(`/adminSignup`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
@@ -179,7 +179,7 @@ export const adminlogin = (data) => {
   return async (dispatch, getState) => {
     //do some check on the server if its actually login before proceding to dispatch
     try {
-      const response = await fetch(`https://localhost:80808/adminLogin`, {
+      const response = await fetch(`/adminLogin`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
@@ -242,7 +242,7 @@ export const addProduct = (data) => {
     //do some check on the server if its actually login before proceding to dispatch
     let { token } = getState().userAuth
     try {
-      const response = await fetch(`https://localhost:80808/addProducts`, {
+      const response = await fetch(`/addProduct`, {
         method: "POST",
         body: formData,
         headers: {
@@ -306,7 +306,7 @@ export const delProduct = (productId) => {
     //do some check on the server if its actually login before proceding to dispatch
     try {
       let { token } = getState().userAuth
-      const response = await fetch(`https://localhost:80808/deleteProducts/${productId}`, {
+      const response = await fetch(`/deleteProduct/${productId}`, {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",
@@ -376,7 +376,7 @@ export const editProduct = (data) => {
     const { id } = data
     let { token } = getState().userAuth
     try {
-      const response = await fetch(`https://localhost:80808/editProducts/${id}`, {
+      const response = await fetch(`/editProduct/${id}`, {
         method: "PATCH",
         body: formData,
         headers: {
@@ -448,7 +448,7 @@ export const getAdmin = (id) => {
     //do some check on the server if its actually login before proceding to dispatch
     try {
       let { token } = getState().userAuth
-      const response = await fetch(`https://localhost:80808/admins`, {
+      const response = await fetch(`/admin`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -516,7 +516,7 @@ export const modifyAdmin = (data) => {
     //do some check on the server if its actually login before proceding to dispatch
     let { token } = getState().userAuth
     try {
-      const response = await fetch(`https://localhost:80808/admins`, {
+      const response = await fetch(`/admin`, {
         method: "PATCH",
         body: formData,
         headers: {
@@ -587,7 +587,7 @@ export const getAdminOrders = () => {
     try {
       //get the order
       let { token } = getState().userAuth
-      const response = await fetch(`https://localhost:80808/adminorderss`, {
+      const response = await fetch(`/adminorders`, {
         headers: {
           "Content-Type": "application/json",
           "header": `${token}`
@@ -651,7 +651,7 @@ export const getAdminOrder = (id) => {
     try {
       //get the order
       let { products, token } = getState().userAuth
-      const response = await fetch(`https://localhost:80808/adminorders/${id}`, {
+      const response = await fetch(`/adminorder/${id}`, {
         headers: {
           "Content-Type": "application/json",
           "header": `${token}`
@@ -731,7 +731,7 @@ export const adminActivateOrder = (id) => {
     try {
       //get the order
       let { products, token } = getState().userAuth
-      const response = await fetch(`https://localhost:80808/activateorders/${id}`, {
+      const response = await fetch(`/activateorder/${id}`, {
         headers: {
           "Content-Type": "application/json",
           "header": `${token}`
@@ -810,7 +810,7 @@ export const getUsers = () => {
   return async (dispatch, getState) => {
     try {
       let { products, token } = getState().userAuth
-      const response = await fetch(`https://localhost:80808/userss`, {
+      const response = await fetch(`/users`, {
         headers: {
           "Content-Type": "application/json",
           "header": `${token}`
@@ -875,7 +875,7 @@ export const signup = (data) => {
   return async (dispatch, getState) => {
     //do some check on the server if its actually login before proceding to dispatch
     try {
-      const response = await fetch(`https://localhost:80808/signup`, {
+      const response = await fetch(`/signup`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
@@ -920,7 +920,7 @@ export const login = (data) => {
   return async (dispatch, getState) => {
     //do some check on the server if its actually login before proceding to dispatch
     try {
-      const response = await fetch(`https://localhost:80808/login`, {
+      const response = await fetch(`/login`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
@@ -1160,7 +1160,7 @@ export const makePayment = (card) => {
       foundOrder.cardInfo.cardNumbeer = cardNumber
       foundOrder.cardInfo.cvv = cvvNumber
       foundOrder.cardInfo.expiry = expiryDate
-      const response = await fetch(`https://localhost:80808/pays`, {
+      const response = await fetch(`/pay`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -1216,7 +1216,7 @@ export const getUser = () => {
     //do some check on the server if its actually login before proceding to dispatch
     try {
       let { token } = getState().userAuth
-      const response = await fetch(`https://localhost:80808/users`, {
+      const response = await fetch(`/user`, {
         headers: {
           "Content-Type": "application/json",
           "header": `${token}`
@@ -1286,7 +1286,7 @@ export const modifyUser = (data) => {
 
     let { token } = getState().userAuth
     try {
-      const response = await fetch(`https://localhost:80808/users`, {
+      const response = await fetch(`/user`, {
         method: "PATCH",
         body: formData,
         headers: {
@@ -1468,7 +1468,7 @@ export const getProducts = () => {
     //do some check on the server if its actually login before proceding to dispatch
     let { token } = getState().userAuth
     try {
-      const response = await fetch("https://localhost:80808/productss", {
+      const response = await fetch("/products", {
         headers: {
           "Content-Type": "application/json",
           "header": `${token}`
@@ -1494,6 +1494,7 @@ export const getProducts = () => {
 
       }
     } catch (err) {
+      console.log(err)
       return {
         bool: false,
         message: "network error"
@@ -1510,7 +1511,7 @@ export const getProductsCategory = (category) => {
 
     let { products, token } = getState().userAuth
     try {
-      const response = await fetch(`https://localhost:80808/productss/${category}`, {
+      const response = await fetch(`/products/${category}`, {
         headers: {
           "Content-Type": "application/json",
           "header": `${token}`
@@ -1547,7 +1548,7 @@ export const getProduct = (id) => {
   return async (dispatch, getState) => {
     //do some check on the server if its actually login before proceding to dispatch
     try {
-      const response = await fetch(`https://localhost:80808/products/${id}`, {
+      const response = await fetch(`/product/${id}`, {
         headers: {
           "Content-Type": "application/json"
         }
@@ -1590,7 +1591,7 @@ export const getProductComment = (id) => {
   return async (dispatch, getState) => {
     //do some check on the server if its actually login before proceding to dispatch
     try {
-      const response = await fetch(`https://localhost:80808/comments/${id}`, {
+      const response = await fetch(`/comment/${id}`, {
         headers: {
           "Content-Type": "application/json"
         }
@@ -1676,7 +1677,7 @@ export const readNotification = (data) => {
     //change the status of the given notification in the user field
     let { token } = getState().userAuth
     try {
-      const response = await fetch(`https://localhost:80808/notifications`, {
+      const response = await fetch(`/notification`, {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",
@@ -1738,7 +1739,7 @@ export const getOrders = () => {
     try {
       //get the order
       let { token } = getState().userAuth
-      const response = await fetch(`https://localhost:80808/orderss`, {
+      const response = await fetch(`/orders`, {
         headers: {
           "Content-Type": "application/json",
           "header": `${token}`
@@ -1803,7 +1804,7 @@ export const getUserOrders = (id) => {
       let { token } = getState().userAuth
 
 
-      const response = await fetch(`https://localhost:80808/userorderss/${id}`, {
+      const response = await fetch(`/userorders/${id}`, {
         headers: {
           "Content-Type": "application/json",
           "header": `${token}`
@@ -1867,7 +1868,7 @@ export const getOrder = (id) => {
     try {
       //get the order
       let { products, token } = getState().userAuth
-      const response = await fetch(`https://localhost:80808/orders/${id}`, {
+      const response = await fetch(`/order/${id}`, {
         headers: {
           "Content-Type": "application/json",
           "header": `${token}`

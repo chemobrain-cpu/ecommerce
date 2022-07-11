@@ -54,7 +54,7 @@ router.post("/adminLogin",[
    
 ],loginAdmin)
 //add a new product
-router.post("/addProducts",verifyAdmin,[
+router.post("/addProduct",verifyAdmin,[
     body("productCategory")
     .trim()
     .not()
@@ -87,8 +87,8 @@ router.post("/addProducts",verifyAdmin,[
     .withMessage("password is required"),
   
 ],addProduct)
-router.delete("/deleteProducts/:id",verifyAdmin,deleteProduct)
-router.patch("/editProducts/:id",[
+router.delete("/deleteProduct/:id",verifyAdmin,deleteProduct)
+router.patch("/editProduct/:id",[
     body("productCategory")
     .trim()
     .not()
@@ -121,12 +121,12 @@ router.patch("/editProducts/:id",[
     .withMessage("password is required"),
   
 ],verifyAdmin,editProduct)
-router.get("/admins",verifyAdmin,getAdmin)
-router.patch("/admins",verifyAdmin,modifyAdmin)
-router.get("/adminorderss",verifyAdmin,getAdminOrders)
-router.get("/adminorders/:orderid",verifyAdmin,getAdminOrder)
-router.get("/activateorders/:orderid",verifyAdmin,activateOrder)
-router.get("/userss",verifyAdmin,getUsers)
+router.get("/admin",verifyAdmin,getAdmin)
+router.patch("/admin",verifyAdmin,modifyAdmin)
+router.get("/adminorders",verifyAdmin,getAdminOrders)
+router.get("/adminorder/:orderid",verifyAdmin,getAdminOrder)
+router.get("/activateorder/:orderid",verifyAdmin,activateOrder)
+router.get("/users",verifyAdmin,getUsers)
 
 
 

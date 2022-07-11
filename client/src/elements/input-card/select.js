@@ -30,7 +30,7 @@ const SelectInput = (props) => {
 
 
         <div className={styles.categorybody}>
-            <select className={styles.selectInput} onChange={selectFunction} value={props.option_1} >
+            <select className={styles.selectInput} onChange={selectFunction}  >
                 <option >
                     {props.option_1}
                 </option>

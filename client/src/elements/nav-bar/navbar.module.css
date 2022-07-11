@@ -2,10 +2,9 @@
     background-color: var(--color-background);
     display:flex;
     align-items: center;
-    height:90px;
+    height:70px;
     z-index: 2;
     width: 100vw;
-    position:fixed;
     border-bottom: 2px solid var(--color-fade);
 }
 /* styling left nav*/

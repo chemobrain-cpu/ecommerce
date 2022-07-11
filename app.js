@@ -23,7 +23,7 @@ app.use( bodyParser.urlencoded({extended:true}))
 app.use(bodyParser.json())
 //configuring database
 
-mongoose.connect(process.env.DB_STRINGL,()=>{
+mongoose.connect(process.env.DB_STRING,()=>{
     console.log("connected")
 })
 //mongodb://127.0.0.1:27017/EazkonDB

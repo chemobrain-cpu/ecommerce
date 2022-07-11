@@ -20,7 +20,7 @@
     flex-direction: column;
     align-items:center;
     width:100%;
-    gap:40px
+    
 }
 .description .content h2{
     width:100%;
@@ -28,6 +28,7 @@
     font-size: 2rem;
     text-align: center;
     font-weight:300;
+    margin-bottom:20px;
 }
 .description .content p{
     width:100%;
@@ -35,6 +36,7 @@
     font-size:1.2rem;
     text-align: center;
     font-weight: 200;
+    margin-bottom:20px;
 }
 .description .content .button{
     width:100%;

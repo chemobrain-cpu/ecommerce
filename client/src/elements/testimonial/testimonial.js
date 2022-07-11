@@ -63,12 +63,7 @@ let Testimonial = () => {
             <h2>{arr[count].username}</h2>
 
             <p>{arr[count].text}</p>
-            <p><img src={`../../emoji1.png`} style={{ width: '30px', height: '30px' }} /> <img src={`../../emoji2.png`} style={{ width: '30px', height: '30px' }} />"</p>
-
-
-
-
-
+            
         </div>
 
         <div className={styles.buttonContainer}>

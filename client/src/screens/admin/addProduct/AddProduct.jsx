@@ -135,7 +135,7 @@ let AddProduct = () => {
                 <div className={styles.right} >
 
                     <Space className={styles.space} />
-                    <div style={{height:'70px'}}>
+                    <div style={{height:'200px'}}>
                 <p>.</p>
 
             </div>

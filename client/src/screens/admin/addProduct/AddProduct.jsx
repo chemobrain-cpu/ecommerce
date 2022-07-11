@@ -135,10 +135,10 @@ let AddProduct = () => {
                 <div className={styles.right} >
 
                     <Space className={styles.space} />
-                    <div style={{height:'200px'}}>
-                <p>.</p>
+                    <div style={{height:'500px'}}>
+                       <p>.</p>
 
-            </div>
+                    </div>
 
 
                     <form onSubmit={submitHandler} className={styles.form}>

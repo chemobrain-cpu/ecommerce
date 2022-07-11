@@ -172,7 +172,7 @@ let EditAdminProfile = () => {
                 </div>
 
                 <div className={styles.right} >
-                    <div style={{ height: '70px' }}>
+                    <div style={{ height: '500px' }}>
                         <p>.</p>
 
                     </div>

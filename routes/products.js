@@ -8,11 +8,11 @@ const { body, validationResult,Result } = require('express-validator')
 const {getProducts,getProduct,getProductComment,getProductsCategory,readNotification } = require("../controller/product")
 
 
-router.get("/products/:category",getProductsCategory)
-router.get("/products",getProducts)
-router.get("/product/:id",getProduct)
-router.get("/comment/:id",getProductComment)
-router.patch("/notification",readNotification)
+router.get("/productss/:category",getProductsCategory)
+router.get("/productss",getProducts)
+router.get("/products/:id",getProduct)
+router.get("/comments/:id",getProductComment)
+router.patch("/notifications",readNotification)
 
 
 module.exports.router = router

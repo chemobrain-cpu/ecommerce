@@ -10,10 +10,8 @@
 
 }
 .serviceImage{
-    width:90%;
+    width:100%;
     filter: brightness(20%);
-    margin-right:5%;
-    margin-left:5%;
     height:90vh;
 
     
@@ -97,12 +95,7 @@
             
         }
     
-        .serviceImage{
-            width:90%;
-            height:100%;
-            filter: brightness(10%);
-            
-        }
+       
     
         .qualities{
             display:flex;
@@ -158,12 +151,7 @@
             
         }
     
-        .serviceImage{
-            width:90%;
-            height:100%;
-            filter: brightness(10%);
-            
-        }
+       
     
         .qualities{
             display:flex;
@@ -221,12 +209,7 @@
         
     }
 
-    .serviceImage{
-        width:90%;
-        height:100%;
-        filter: brightness(10%);
-        
-    }
+    
 
     .qualities{
         display:flex;

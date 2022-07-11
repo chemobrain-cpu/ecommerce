@@ -12,7 +12,7 @@
 .form_inputcontainer .categoryhead{
     display:flex;
     margin-left:3px;
-    gap:3rem;
+    gap:5rem;
     margin-bottom: 20px;
 }
 .form_inputcontainer .categoryhead h3{

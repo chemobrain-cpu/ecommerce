@@ -3,16 +3,15 @@ import styles from './select.module.css'
 
 
 const SelectInput = (props) => {
-   /* useEffect(()=>{
+   useEffect(()=>{
         props.setFormDetails({
             value: props.option_1,
             formName: props.formName
         })
     },[props])
-    */
+    
 
     let selectFunction = useCallback((e) => {
-       alert(e.target.value)
         props.setFormDetails({
             value: e.target.value,
             formName: props.formName
@@ -33,7 +32,7 @@ const SelectInput = (props) => {
 
         <div className={styles.categorybody}>
             <select className={styles.selectInput} onChange={selectFunction}  >
-                <option >
+                <option selected>
                     {props.option_1}
                 </option>
                 <option>

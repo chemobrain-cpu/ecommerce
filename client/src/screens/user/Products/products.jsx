@@ -145,7 +145,7 @@ let Products = () => {
                                 key={data._id}
                                 id={data._id}
                                 amount={Number(data.amount)}
-                                imageUrl={`\\${data.photos}`}
+                                imageUrl={`/${data.photos}`}
                                 addToCart={addToCart}
                                 deleteProduct = {deleteProduct}
                                 editProduct = {editProduct}

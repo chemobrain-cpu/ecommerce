@@ -72,7 +72,7 @@
 
 /* form section*/
 .form{
-    width:80%;
+    width:450px;
     margin-bottom: 10px;
     padding-bottom: 20px;
     display: flex;
@@ -229,6 +229,18 @@ td{
         font-size: 2rem;
         color:var(--color-chocolate)
     }
+
+    .form{
+        width:90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 10px;
+        padding-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        
+    }
+
 
 
 

@@ -9,6 +9,8 @@
     border-radius: 5px;
     color:var(--color-chocolate);
     font-weight:500;
+    margin-right: 10px;
+    margin-bottom: 20px;
     
 }
 .stateactive{

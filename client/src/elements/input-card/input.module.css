@@ -38,7 +38,7 @@
 .form_inputcontainer .categorybody input{
     background-color:var(--color-fade);
     width:100%;
-    height:70px;
+    height:65px;
     text-align: center;
     border-radius:5px;
     color:var(--color-form);

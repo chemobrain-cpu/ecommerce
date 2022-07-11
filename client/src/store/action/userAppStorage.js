@@ -22,7 +22,7 @@ export const DELETEREPLYCOMMENT = "DELETEREPLYCOMMENT"
 export const LOGUSERIN = "LOGUSERIN"
 /* Admin actions*/
 
-let socket = IO(`http://${window.location.hostname}:8080`)
+let socket = IO(`/`)
 let timer
 //utility function for calculating if token expires
 let calculateRemainingTime = (expiryDate) => {

@@ -107,24 +107,24 @@ let Products = () => {
                         <Container>
                             <ImageCard
 
-                                imageUrl={`http:\\\\localhost:8080\\${product.photos}`}
+                                imageUrl={`\\${product.photos}`}
                                 view="front-view"
 
                             />
                             <ImageCard
 
-                                imageUrl={`http:\\\\localhost:8080\\${product.photos}`}
+                                imageUrl={`\\${product.photos}`}
                                 view="front-view"
 
                             />
                             <ImageCard
 
-                                imageUrl={`http:\\\\localhost:8080\\${product.photos}`}
+                                imageUrl={`\\${product.photos}`}
                                 view="front-view"
 
                             />
                             <ImageCard
-                                imageUrl={`http:\\\\localhost:8080\\${product.photos}`}
+                                imageUrl={`\\${product.photos}`}
                                 view="front-view"
                             />
 

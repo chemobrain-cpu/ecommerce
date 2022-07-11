@@ -10,7 +10,7 @@ let CommentInfo = (props) => {
                 <div className={styles.comment}>
                     <div className={styles.img}>
                         {props.photo?<img
-                            src={`http:\\\\localhost:8080\\${props.photo}`}
+                            src={`\\${props.photo}`}
                             className={styles.userimg}
                         />:<img
                         src="../../smile.png"

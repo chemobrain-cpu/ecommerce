@@ -136,7 +136,7 @@ let Products = () => {
                                 id={data._id}
                                 edit={true}
                                 amount={Number(data.amount)}
-                                imageUrl={`http:\\\\localhost:8080\\${data.photos}`}
+                                imageUrl={`\\${data.photos}`}
                                 deleteProduct = {deleteProduct}
                                 editProduct = {editProduct}
                             />)}
@@ -150,7 +150,7 @@ let Products = () => {
                                 id={data._id}
                                 edit={true}
                                 amount={Number(data.amount)}
-                                imageUrl={`http:\\\\localhost:8080\\${data.photos}`}
+                                imageUrl={`\\${data.photos}`}
                                 deleteProduct = {deleteProduct}
                                 editProduct = {editProduct}
                             />)}

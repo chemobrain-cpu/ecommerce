@@ -11,8 +11,9 @@
 
 .form_inputcontainer .categoryhead{
     display:flex;
-    margin-left:5px;
-    gap:1.5rem
+    margin-left:3px;
+    gap:2rem;
+    margin-bottom: 5px;
 }
 .form_inputcontainer .categoryhead h3{
     font-weight: 700;

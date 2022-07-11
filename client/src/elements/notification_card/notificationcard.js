@@ -43,7 +43,7 @@ let NotificationCard = (props) => {
                 <div className={styles.info}>
 
                     <div className={styles.img}>
-                        <CircularImage imageUrl={`http:\\\\localhost:8080\\${props.user.photo}`} className={styles.image} />
+                        <CircularImage imageUrl={`\\${props.user.photo}`} className={styles.image} />
 
                     </div>
                     <div className={styles.data}>

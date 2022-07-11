@@ -18,10 +18,7 @@ let NavBar = () => {
         setBlock(prev => !prev)
     },[])
 
-    return (<div className={styles.home}>
-        {/* Navigation section*/}
-
-        <div className={styles.navigation}>
+    return (<div className={styles.navigation}>
             <div className={styles.navLeft}>
                 <h2>obis</h2>
                 <div className={styles.navigationLinkContainer}>
@@ -107,13 +104,7 @@ let NavBar = () => {
 
             </div>
 
-
-
-        </div>
-
-
-
-    </div >)
+        </div>)
 }
 
 export default React.memo(NavBar)

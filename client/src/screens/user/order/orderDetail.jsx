@@ -100,7 +100,7 @@ let OrderDetail = () => {
                                     name={data.product.NameOfProduct}
                                     no={data.no}
                                     amount={data.amount}
-                                    imageUrl={`http:\\\\localhost:8080\\${data.product.photos}`} />)}
+                                    imageUrl={`\\${data.product.photos}`} />)}
                             </Container> : ""}
 
 

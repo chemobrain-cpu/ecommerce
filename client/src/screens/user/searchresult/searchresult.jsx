@@ -132,7 +132,7 @@ let Search = () => {
                                 key={data._id}
                                 id={data._id}
                                 amount={Number(data.amount)}
-                                imageUrl={`http:\\\\localhost:8080\\${data.photos}`}
+                                imageUrl={`\\${data.photos}`}
                                 addToCart={addToCart}
                                 deleteProduct = {deleteProduct}
                                 editProduct = {editProduct}
@@ -148,7 +148,7 @@ let Search = () => {
                             {products.reverse().map((data) => <PropertyCard
                                 key={data._id}
                                 amount={Number(data.amount)}
-                                imageUrl={`http:\\\\localhost:8080\\${data.photos}`}
+                                imageUrl={`\\${data.photos}`}
                                 deleteProduct = {deleteProduct}
                                 editProduct = {editProduct}
                             />)}

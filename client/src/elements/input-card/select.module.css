@@ -13,7 +13,8 @@
 .form_selectcontainer .categoryhead{
     display:flex;
     margin-left:5px;
-    gap:1.5rem
+    gap:2rem;
+    margin-bottom: 5px;
 }
 
 .form_selectcontainer .categoryhead span{

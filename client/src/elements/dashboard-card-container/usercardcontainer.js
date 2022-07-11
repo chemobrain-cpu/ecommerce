@@ -8,7 +8,7 @@ let UserCardContainer = (props) => {
     return (<div className={styles.dashboardCardContainer}>
 
         {props.users.map(data => <UserCard
-        key={data._id} imageUrl={`http:\\\\localhost:8080\\${data.photo}`}
+        key={data._id} imageUrl={`\\${data.photo}`}
             username={data.username}
             onClick={() => props.navigateHandler(data._id)}
         />)}

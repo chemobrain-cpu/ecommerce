@@ -85,3 +85,65 @@
     justify-content: center;
     font-size: 1rem;
 }
+@media screen and (min-width:0px) and (max-width:700px){
+    .product_ads{
+        padding:40px;
+        width:270px;
+        height:340px;
+        
+    }
+    .buttons_container{
+        display: flex;
+        gap:1rem;
+        padding-top:10px;
+        padding-bottom:10px;
+        justify-content: center;
+        
+    }
+/* amount */
+    .amount{
+        display: flex;
+        justify-content: space-around;
+    }
+    .price{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 10px;
+    }
+    .discount{
+        text-decoration:line-through;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+/*chat containers*/
+    .chat1{
+        width:150px;
+        border-radius:2px;
+        background-color:var(--color-fade);
+        color:var(--color-chocolate);
+        border-radius:10px;
+        height:50px;
+        font-size: 2rem;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 5px;
+    }
+    
+    .chats2{
+        width:60px;
+        border-radius:2px;
+        background-color:var(--color-fade);
+        color:var(--color-chocolate);
+        border-radius:10px;
+        height:50px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+
+}

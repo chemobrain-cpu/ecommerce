@@ -1,7 +1,7 @@
 
 /*  newsletter section */
 .newsletter{
-    background-color: var(--color-chocolate);
+    background-color: black;
     text-align: center;
     display:flex;
     flex-direction: column;
@@ -48,7 +48,6 @@
 @media screen and (min-width:0px) and (max-width:350px){
     /*  newsletter section */
 .newsletter{
-    background-color: var(--color-chocolate);
     text-align: center;
     display:flex;
     flex-direction: column;
@@ -95,7 +94,6 @@
 @media screen and (min-width:351px) and (max-width:700px){
 /*  newsletter section */
 .newsletter{
-    background-color: var(--color-chocolate);
     text-align: center;
     display:flex;
     flex-direction: column;

@@ -165,7 +165,7 @@ let Products = () => {
                             {products.reverse().map((data) => <PropertyCard
                                 key={data._id}
                                 amount={Number(data.amount)}
-                                imageUrl={`\\${data.photos}`}
+                                imageUrl={`localhost:8080\\${data.photos}`}
                                 deleteProduct = {deleteProduct}
                                 editProduct = {editProduct}
                             />)}

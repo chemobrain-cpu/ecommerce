@@ -158,7 +158,7 @@ let EditAdminProfile = () => {
 
     }
     if (isSucessful) {
-        return <InfoModal close={closeModal} text='submitting form' text={isSucessful} />
+        return <InfoModal close={closeModal}  text={isSucessful} />
     }
 
 

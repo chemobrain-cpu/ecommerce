@@ -20,21 +20,10 @@ let NavBar = () => {
 
     return (<div className={styles.navigation}>
             <div className={styles.navLeft}>
-                <h2>obis</h2>
+                <h2>OBIS</h2>
                 <div className={styles.navigationLinkContainer}>
-                    <p className={styles.active}>Homes</p>
-                    <div>
-                        <p onClick={focusHandler} className={styles.category}>Category</p>
-                        {block && <div className={styles.submenu}  >
-                            <p>furnitures</p>
-                            <p>stone coated</p>
-                            <p>aluminium roofs</p>
-                            <p>water collector</p>
-                            <p>stone roofs</p>
-
-                        </div>}
-
-                    </div>
+                    <p >Homes</p>
+                    
 
                 </div>
 
@@ -87,7 +76,7 @@ let NavBar = () => {
                     
                     <div className={styles.signupContainer}>
 
-                        <div className={styles.cartNumber}>
+                        <div >
                             <h3>Sign In</h3>
 
                         </div>

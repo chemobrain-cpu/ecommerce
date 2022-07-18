@@ -1,5 +1,5 @@
 .navigation{
-    background-color: var(--color-background);
+    background-color:  var(--color-fade);
     display:flex;
     align-items: center;
     height:70px;
@@ -35,7 +35,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius:5px;
+    border-radius:2px;
     padding:10px
 }
 .navigation .navLeft .navigationLinkContainer .category{
@@ -80,7 +80,6 @@
 .navigation .navRight .searchCon{
     width:50%;
     height:45px;
-    background-color: var(--color-fade);
 }
 .searchCon input{
     width:80%;
@@ -102,17 +101,17 @@
 
 /*  signup */
 .navigation .navRight .iconContainer .signupContainer{
-    background-color: var(--color-chocolate);
+    border:1px solid var(--color-chocolate);
     display:flex;
     justify-content: center;
     align-items: center;
     width:90px;
     height:50px;
-    color:white;
-    border-radius: 5px;
+    
+    border-radius: 2px;
 }
 .navigation .navRight .iconContainer .signupContainer div h3{
-    color:white;
+    color:var(--color-chocolate);
     font-weight:400
 }
 /* styling toggle menu*/
@@ -131,9 +130,8 @@
     display: none;
 }
 .sideBar label{
-    background-color: var(--color-chocolate);
     color:white;
-    border-radius:5px;
+    border-radius: 2px;
     display: flex;
     height:60px;
     width:50px;
@@ -174,7 +172,6 @@
 /*   extra small */
 @media screen and (min-width:0px) and (max-width:700px){
     .navigation{
-        background-color: var(--color-background);
         display:flex;
         justify-content: space-between;
     }
@@ -200,20 +197,19 @@
 }
 .navigation .navRight .togglemenuContainer .togglemenu{
     display:flex;
-    width:40px;
-    height: 40px;
+    width:50px;
+    height: 50px;
     background-color: var(--color-chocolate);
     color:white;
     align-items: center;
     justify-content:center;
-    border-radius: 5px;
+    border-radius: 2px;
     padding-left:2px;
 }
  /*  search container */
  .navigation .navRight .searchCon{
      width:80%;
      display: flex;
-     background-color: black;
      align-items: center;
      justify-content: center;
  }
@@ -229,18 +225,7 @@
     display: none;
 
 }
-.navigation .navRight .iconContainer .cartContainer{
-    border:1px solid grey;
-    width:50px;
-    height: 50px;
-    border-radius:50px;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    position:relative;
-    display: none;
 
-}
 .navigation .navRight .iconContainer .cartContainer:nth-of-type(1){
     display:none
 }

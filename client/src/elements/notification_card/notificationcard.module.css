@@ -43,14 +43,14 @@
  }
 
  .notification .info .data p  span{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color:var(--color-chocolate);
     margin-right:6px;
     font-weight: 600;
     
  }
  .notification .info .data p{
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color:rgb(119, 119, 119)
     
  }
@@ -85,12 +85,12 @@
     align-items: center;
     }
 .notification .info .data p  span{
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color:var(--color-chocolate);
   
 }
 .notification .info .data p  {
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 .notification .info .data{
@@ -112,13 +112,13 @@
         align-items: center;
      }
     .notification .info .data p  span{
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         color:var(--color-chocolate);
       
     
  }
  .notification .info .data p {
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
      
       

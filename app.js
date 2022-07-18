@@ -26,7 +26,8 @@ app.use(bodyParser.json())
 mongoose.connect(process.env.DB_STRING,()=>{
     console.log("connected")
 })
-//mongodb://127.0.0.1:27017/EazkonDB
+
+
 
 //configuring multer
 

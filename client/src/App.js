@@ -1,7 +1,8 @@
 import React,{useEffect,Suspense} from "react"
 import {Route,Routes} from 'react-router-dom'
 import './App.css'
-
+import Sentry from "react-activity/dist/Sentry"
+import  "react-activity/dist/Sentry.css"
 
 //admin screens
 //import AddProduct from './screens/admin/addProduct/AddProduct'
@@ -66,6 +67,10 @@ const ProductDetail = React.lazy(()=>import("./screens/general/productDetail/pro
 const ProductComment = React.lazy(()=>import("./screens/general/productComment/productComment"))
 const Home = React.lazy(()=>import('./screens/general/home/home'))
 const Notification = React.lazy(()=>import('./screens/general/notification/notification'))
+const Fallback = React.lazy(()=>import('./screens/general//fallbackscreen/fallbackScreen'))
+
+
+
 
 
 function App() {
@@ -81,7 +86,10 @@ function App() {
 
 
     <div  className="App">
-      <Suspense fallback={<p>please wait....</p>}>
+      <Suspense fallback={<div style={{display:'flex',justifyContent:"center",alignItems:"center",width:'100vw',height:'100vh'}} >
+            <Sentry size={50} />
+        
+        </div>}>
         <Routes>
         {/* Admin Routes */}
         <Route path='/adminlogin' element={< AdminLogin/>} />

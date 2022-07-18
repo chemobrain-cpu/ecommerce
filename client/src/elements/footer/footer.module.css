@@ -13,20 +13,23 @@
     width:100vw;
     overflow: hidden;
     width:100%;
-    background-color: #29261e;
     background-color: black;
-    display:flex;
     padding-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 30px;
+
 }
 
 /* address info section*/
 .addressInfo{
     width:50%;
     display: flex;
-    flex-direction: column;
     gap:40px;
     padding-bottom: 20px;
     align-items: center;
+    justify-content: center;
 }
 
 .address_one{
@@ -35,17 +38,18 @@
 }
 
 .address_one h2{
-    color:rgb(207, 126, 97);
+    color:rgb(165, 165, 165);
     padding-bottom: 20px;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight: 500;
-    text-decoration: underline;
+    
 }
 .address_one p{
     width:200px;
     justify-self: center;
-    font-size: 1.2rem;
-    color:var(--color-fade)
+    font-size:1.2rem;
+    color:var(--color-fade);
+    font-weight: 400;
 }
 
 .address_two{
@@ -54,17 +58,18 @@
 }
 
 .address_two h2{
-    color:rgb(207, 126, 97);
+    color:rgb(165, 165, 165);
     padding-bottom: 20px;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight: 500;
-    text-decoration: underline;
+    
 }
 .address_two p{
     width:200px;
     justify-self: center;
     font-size: 1.2rem;
-    color:var(--color-fade)
+    color:var(--color-fade);
+    font-weight: 400;
 }
 
 .address_contact{
@@ -73,18 +78,19 @@
 }
 
 .address_contact h2{
-    color:rgb(207, 126, 97);
     padding-bottom: 20px;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight: 500;
-    text-decoration: underline;
+    
+    color:rgb(165, 165, 165);
 }
 
 .address_contact p{
     width:200px;
     justify-self: center;
-    font-size: 1.2rem;
-    color:var(--color-fade)
+    font-size:1.2rem;
+    color:var(--color-fade);
+    font-weight: 400;
 }
 
 
@@ -97,14 +103,14 @@
     flex-direction: column;
 }
 .links h2{
-    text-decoration: underline;
+    
     margin-bottom: 35px;
     padding-bottom: 20px;
-    color:rgb(207, 126, 97);
-    font-size:1.5rem;
+    font-size:2rem;
     font-weight: 400;
     align-self: flex-start;
     padding-left: 50px;
+    color:rgb(204, 204, 204);
 }
 .links div{
     width:50%;
@@ -116,7 +122,7 @@
 .links .link span{
     font-size: 1.1rem;
     border:1px solid var(--color-fade);
-    border-radius: 5px;
+    border-radius: 1px;
     padding:10px;
     color:white;
     width:120px;
@@ -126,6 +132,28 @@
 .links .link span:hover{
     background-color: var(--color-fade);
     color:var(--color-chocolate);
+}
+.social{
+    display: flex;
+    flex-direction: column;
+    height:20vh;
+    background-color: black;
+}
+.social p{
+    padding-bottom: 20px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-align: center;
+    color:rgb(165, 165, 165);
+}
+.social span{
+    color:white;
+    font-size:3rem
+}
+.social .socialcontainer{
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -142,12 +170,16 @@
 
 @media screen and (min-width:0px) and (max-width:700px){
     
-.address{
-    flex-direction:column
-}
+
     /* address info section*/
+.address{
+    align-items: center;
+}
 .addressInfo{
-    width:100%
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 /*links section*/
 .links{

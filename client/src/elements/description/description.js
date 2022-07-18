@@ -14,7 +14,7 @@ let Description = (props) => {
         <img src={props.imageUrl} alt='product image' className={styles.image} />
         <div className={styles.content}>
             <h2>{props.header}</h2>
-            <p >{props.text}</p>
+            <p style={{fontWeight:'200'}}>{props.text}</p>
             <div className={styles.button}>
                 <button onClick={()=>navigate("/products")}> shop now</button>
             </div>

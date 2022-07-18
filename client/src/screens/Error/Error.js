@@ -10,6 +10,8 @@ static getDerivedStateFromError(error){
 }
 componentDidCatch(error,errorInfo){
     //logErrorToMyService(error,errorInfo)
+    console.log(error)
+    console.log(errorInfo)
 }
 render(){
     if(this.state.hasError){

@@ -22,47 +22,35 @@ let Footer = () => {
             <div className={styles.address} data-aos='fade-down'>
                 <div className={styles.addressInfo}>
                     <div className={styles.address_one}>
-                        <h2>FIRST OFFICE ADDRESS</h2>
+                        <h2>1ST OFFICE ADDRESS</h2>
                         <p>DELTIOPE SHOPPING PLAZA by Flobal Hotel Junction, Okuokoko Town Okpe L.G.A,Delta State</p>
 
                     </div>
                     <div className={styles.address_two}>
-                    <h2> SECOND OFFICE ADDRESS</h2>
+                    <h2> 2ND OFFICE ADDRESS</h2>
                     <p>Opposite Ogheneovo filling station ikwheghwu, Agbarho   Town Ughelli north L.G.A,Delta State</p>
 
                     </div>
-                    <div className={styles.address_contact}>
-                    <h2> CONTACT US</h2>
-                    <p> call us on 09123672571,08104067927,08160712938 or Email us on </p>
-
-                    </div>
+                    
 
                 </div>
-                <div className={styles.links}>
-                    <h2>COLLECTIONS</h2>
-                    <div className={styles.link}>
-                        <span onClick={()=>navigate("/products/chairs")}>Chairs</span><span onClick={()=>navigate("/products/Wardrobe")}>Wardrobe</span>
-                    </div>
-                    <div className={styles.link}>
-                        <span onClick={()=>navigate("/products/Kitchen cabinets")}>Cabinets</span><span  onClick={()=>navigate("/products/doors")}>Doors</span>
-                    </div>
-
-                    <div className={styles.link}>
-                        <span  onClick={()=>navigate("/products/Classic")}>Roofs</span><span onClick={()=>navigate("/products/Red design")}>Water Collectors</span>
-                    </div>
-
-                    <div className={styles.link}>
-                        <span onClick={()=>navigate("/products/Classic")}>Aluminium</span><span onClick={()=>navigate("/products/Classic")}>Acessories</span>
-                    </div>
+              
 
 
+
+
+
+
+            </div>
+
+            <div className={styles.social}>
+                <p>FOLLOW US</p>
+                <div className={styles.socialcontainer}>
+                    <p>
+                    <span className="material-icons">facebook</span>
+                    </p>
+                    
                 </div>
-
-
-
-
-
-
             </div>
 
 

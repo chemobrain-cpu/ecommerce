@@ -44,7 +44,6 @@
 }
 /*comment section*/
 .sendMessage{
-    position:fixed;
     top:90vh;
     width:100%
 }
@@ -113,9 +112,7 @@
 
     /* styling the submit*/
     .sendMessage{
-        position:fixed;
-        top:90vh;
-        width:98%
+        
 }
 
 
@@ -185,10 +182,7 @@
     }
     /*styling submit*/
     .sendMessage{
-        position:fixed;
-        top:90vh;
-        left:30vw;
-        width:70vw;
+        
 }
 
     .screen .right .leftsection{
@@ -260,12 +254,7 @@
     margin-top:80px;
     }
       /*styling submit*/
-.sendMessage{
-    position:fixed;
-    top:90vh;
-    left:19vw;
-    width:43vw;
-}
+
 
   
   

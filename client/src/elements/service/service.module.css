@@ -4,9 +4,7 @@
     overflow: hidden;
     position:relative;
     height: 80vh;
-    background-color: var(--color-fade);
     padding-top:10vh;
-    margin-bottom: 10px;
 
 }
 .serviceImage{

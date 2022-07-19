@@ -12,11 +12,8 @@ let NavBar = () => {
     let [block, setBlock] = useState(false)
     //initialising redux
     let navigate = useNavigate()
-    let { cart } = useSelector(state => state.userAuth)
 
-    let focusHandler = useCallback(() => {
-        setBlock(prev => !prev)
-    },[])
+   
 
     return (<div className={styles.navigation}>
             <div className={styles.navLeft}>
@@ -56,8 +53,6 @@ let NavBar = () => {
                 </div>
                 <div className={styles.searchCon}>
                     <SearchContainer/>
-
-
                 </div>
 
 

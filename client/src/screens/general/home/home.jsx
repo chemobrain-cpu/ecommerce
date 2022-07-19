@@ -36,17 +36,21 @@ let Home = () => {
         
         <ProductSection />
 
-        <div style={{height:'20vh',display:'flex',alignItems:"center",justifyContent:'center'}}>
+        <div style={{height:'40vh',display:'flex',alignItems:"center",justifyContent:'center',backgroundColor:'#d0d4db'}}>
 
         <button onClick={goToShop} style={{fontSize:'1rem',color:"rgb(95, 95, 95)",backgroundColor:"var(--color-chocolate)",width:"150px",height:'60px',color:'white'}}> view more</button>
 
+
+        </div>
+        <div style={{ height: '150px' }}>
+            <p>.</p>
 
         </div>
         {/* action*/}
         <Action />
 
 
-        <Description header="QUALITY AND AFFORDABLE SERVICES" imageUrl={`../../obaschair.jpg`} />
+        <Description header="QUALITY AND AFFORDABLE ROOFING" imageUrl={`../../obaschair.jpg`} />
         <div style={{ height: '200px' }}>
             <p>.</p>
         </div>

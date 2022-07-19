@@ -141,7 +141,7 @@ let Products = () => {
                                 key={data._id}
                                 id={data._id}
                                 amount={Number(data.amount)}
-                                imageUrl={`/${data.photos}`}
+                                imageUrl={`https://shielded-plateau-98818.herokuapp.com/${data.photos}`}
                                 addToCart={addToCart}
                                 deleteProduct = {deleteProduct}
                                 editProduct = {editProduct}
@@ -157,7 +157,7 @@ let Products = () => {
                             {products.reverse().map((data) => <PropertyCard
                                 key={data._id}
                                 amount={Number(data.amount)}
-                                imageUrl={`/${data.photos}`}
+                                imageUrl={`https://shielded-plateau-98818.herokuapp.com/${data.photos}`}
                                 deleteProduct = {deleteProduct}
                                 editProduct = {editProduct}
                             />)}

@@ -134,7 +134,7 @@ let Products = () => {
                                 id={data._id}
                                 edit={true}
                                 amount={Number(data.amount)}
-                                imageUrl={`/${data.photos}`}
+                                imageUrl={`https://shielded-plateau-98818.herokuapp.com/${data.photos}`}
                                 deleteProduct = {deleteProduct}
                                 editProduct = {editProduct}
                             />)}
@@ -148,7 +148,7 @@ let Products = () => {
                                 id={data._id}
                                 edit={true}
                                 amount={Number(data.amount)}
-                                imageUrl={`/${data.photos}`}
+                                imageUrl={`https://shielded-plateau-98818.herokuapp.com/${data.photos}`}
                                 deleteProduct = {deleteProduct}
                                 editProduct = {editProduct}
                             />)}

@@ -199,8 +199,7 @@
     display:flex;
     width:50px;
     height: 50px;
-    background-color: var(--color-chocolate);
-    color:white;
+    color:var(--color-chocolate);
     align-items: center;
     justify-content:center;
     border-radius: 2px;

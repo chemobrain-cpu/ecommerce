@@ -23,8 +23,6 @@ let NavBar = () => {
                 <h2>OBIS</h2>
                 <div className={styles.navigationLinkContainer}>
                     <p >Homes</p>
-                    
-
                 </div>
 
             </div>
@@ -62,14 +60,6 @@ let NavBar = () => {
 
                 </div>
 
-
-
-
-
-               
-                    
-
-               
 
                 <div className={styles.iconContainer}>
 

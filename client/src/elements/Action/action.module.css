@@ -2,13 +2,13 @@
 .con{
     padding-bottom: 50px;
     align-items: center;
-    height:80vh;
+    height:60vh;
     justify-content: center;
     gap:5px;
     padding-top: 50px;
    }
 .action{
-    width:300px;
+    width:280px;
     border-radius: 2px;
     position: relative;
     background-color: var(--color-chocolate);
@@ -50,7 +50,7 @@
 .con{
     padding: 50px 20px 50px 20px;
     align-items: center;
-    height:80vh;
+    height:60vh;
     justify-content:start;
     gap:20px;
 

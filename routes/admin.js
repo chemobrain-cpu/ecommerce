@@ -7,7 +7,7 @@ const { body} = require('express-validator')
 
 const {signupAdmin,loginAdmin,addProduct,deleteProduct,editProduct,getAdmin,modifyAdmin,getAdminOrders,getAdminOrder,activateOrder,getUsers} = require("../controller/admin")
 
-router.post("/adminSignup",[
+router.post("/auth/adminSignup",[
     body("username")
     .trim()
     .not()
@@ -40,7 +40,7 @@ router.post("/adminSignup",[
     .withMessage("phone is required"),
 ],signupAdmin)
 
-router.post("/adminLogin",[
+router.post("/auth/adminLogin",[
     body("userEmail")
     .trim()
     .not()
@@ -54,7 +54,7 @@ router.post("/adminLogin",[
    
 ],loginAdmin)
 //add a new product
-router.post("/addProduct",verifyAdmin,[
+router.post("/auth/addProduct",verifyAdmin,[
     body("productCategory")
     .trim()
     .not()
@@ -87,8 +87,8 @@ router.post("/addProduct",verifyAdmin,[
     .withMessage("password is required"),
   
 ],addProduct)
-router.delete("/deleteProduct/:id",verifyAdmin,deleteProduct)
-router.patch("/editProduct/:id",[
+router.delete("/auth/deleteProduct/:id",verifyAdmin,deleteProduct)
+router.patch("/auth/editProduct/:id",[
     body("productCategory")
     .trim()
     .not()
@@ -121,12 +121,12 @@ router.patch("/editProduct/:id",[
     .withMessage("password is required"),
   
 ],verifyAdmin,editProduct)
-router.get("/admin",verifyAdmin,getAdmin)
-router.patch("/admin",verifyAdmin,modifyAdmin)
-router.get("/adminorders",verifyAdmin,getAdminOrders)
-router.get("/adminorder/:orderid",verifyAdmin,getAdminOrder)
-router.get("/activateorder/:orderid",verifyAdmin,activateOrder)
-router.get("/users",verifyAdmin,getUsers)
+router.get("/auth/admin",verifyAdmin,getAdmin)
+router.patch("/auth/admin",verifyAdmin,modifyAdmin)
+router.get("/auth/adminorders",verifyAdmin,getAdminOrders)
+router.get("/auth/adminorder/:orderid",verifyAdmin,getAdminOrder)
+router.get("/auth/activateorder/:orderid",verifyAdmin,activateOrder)
+router.get("/auth/users",verifyAdmin,getUsers)
 
 
 

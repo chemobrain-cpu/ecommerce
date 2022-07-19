@@ -54,6 +54,7 @@ const SideBar = (props) => {
     return (<div className={`${styles.sideBar} ${props.className}`} >
 
         <div className={styles.userprofile}>
+            <h2>OBIS</h2>
             {user && user.admin ? <CircularImage imageUrl={`/${user.photo}`} className={styles.image} /> : ""}
             {user && !user.admin ? <CircularImage imageUrl={`/${user.photo}`} className={styles.image} /> : ""}
             {!user ? <CircularImage imageUrl="../../smile.png" className={styles.image} /> : ""}

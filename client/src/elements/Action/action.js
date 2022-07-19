@@ -14,29 +14,61 @@ let Action = () => {
     return <Container className={styles.con} data-aos='fade-down'>
 
         {/* action */}
-        <div className={styles.action}>
-            <img src={`../../roofs.jpg`} alt='product image' className={styles.actionimage} />
-            <div>
-                <p>Best and Durable Roofing </p>
-                <button onClick={()=>navigate("/products")}>call now</button>
-            </div>
-        </div>
-        <div className={styles.action}>
-            <img src={`../../beds.jpg`} alt='product image' className={styles.actionimage} />
-            <div>
-                <p>Get the Best and Affordable Furnitures</p>
-                <button onClick={()=>navigate("/products")}>shop now</button>
+        
+       
 
-            </div>
-        </div>
         <div className={styles.action}>
             <img src={`../../wardrobe.jpg`} alt='product image' className={styles.actionimage} />
             <div>
-                <p>Quick Delivery</p>
+               
                 <button onClick={()=>navigate("/products")}>shop now</button>
 
             </div>
         </div>
+
+        <div className={styles.action}>
+            <img src={`../../action1.jpg`} alt='product image' className={styles.actionimage} />
+            <div>
+                
+                <button onClick={()=>navigate("/products")}>shop now</button>
+
+            </div>
+        </div>
+
+
+        <div className={styles.action}>
+            <img src={`../../action2.jpg`} alt='product image' className={styles.actionimage} />
+            <div>
+           
+                <button onClick={()=>navigate("/products")}>shop now</button>
+
+            </div>
+        </div>
+
+
+        <div className={styles.action}>
+            <img src={`../../action3.jpg`} alt='product image' className={styles.actionimage} />
+            <div>
+               
+                <button onClick={()=>navigate("/products")}>shop now</button>
+
+            </div>
+        </div>
+
+        <div className={styles.action}>
+            <img src={`../../action4.jpg`} alt='product image' className={styles.actionimage} />
+            <div>
+                
+                <button onClick={()=>navigate("/products")}>shop now</button>
+
+            </div>
+        </div>
+
+
+
+
+
+
     </Container>
 }
 

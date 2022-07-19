@@ -7,7 +7,7 @@ const { body, validationResult,Result } = require('express-validator')
 
 const {signupUser,loginUser,getUser,getUserFromJwt,getAdminFromJwt} = require("../controller/auth")
 
-router.post("/signup",[
+router.post("/auth/signup",[
     body("username")
     .trim()
     .not()
@@ -40,7 +40,7 @@ router.post("/signup",[
     .withMessage("phone is required"),
 ],signupUser)
 
-router.post("/login",[
+router.post("/auth/login",[
     body("userEmail")
     .trim()
     .not()
@@ -53,9 +53,9 @@ router.post("/login",[
     .withMessage("password is required"),
    
 ],loginUser)
-router.get("/user/:id",getUser)
-router.get("/userByToken",getUserFromJwt)
-router.get("/adminByToken",getAdminFromJwt)
+router.get("/auth/user/:id",getUser)
+router.get("/auth/userByToken",getUserFromJwt)
+router.get("/auth/adminByToken",getAdminFromJwt)
 
 
 

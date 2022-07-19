@@ -2,7 +2,7 @@
     padding:20px;
     padding-top: 0px;
     padding-bottom:0px;
-    width:300px;
+    width:250px;
     height:400px;
     display: flex;
     justify-content: center;
@@ -13,8 +13,8 @@
 }
 
 .propertyImage{
-    width:280px;
-    height:250px;
+    width:250px;
+    height:220px;
     border-radius:5px;
     align-self: center;
     background-color: var(--color-fade);
@@ -30,7 +30,7 @@
     
 }
 .chat1{
-    width:200px;
+    width:150px;
     border-radius:2px;
     background-color:var(--color-fade);
     color:var(--color-chocolate);

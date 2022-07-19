@@ -9,12 +9,12 @@ const { verifyToken}  = require("../utils/util")
 const {makePayment,getOrders,getOrder,getUser,modifyUser,getUserOrders} = require("../controller/user")
 
 
-router.post("/pay",verifyToken,makePayment)
-router.get("/orders",verifyToken,getOrders)
-router.get("/userorders/:id",verifyToken,getUserOrders)
-router.get("/order/:orderid",verifyToken,getOrder)
-router.get("/user",verifyToken,getUser)
-router.patch("/user",verifyToken,modifyUser)
+router.post("/auth/pay",verifyToken,makePayment)
+router.get("/auth/orders",verifyToken,getOrders)
+router.get("/auth/userorders/:id",verifyToken,getUserOrders)
+router.get("/auth/order/:orderid",verifyToken,getOrder)
+router.get("/auth/user",verifyToken,getUser)
+router.patch("/auth/user",verifyToken,modifyUser)
 
 
 module.exports.router = router

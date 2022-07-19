@@ -122,10 +122,7 @@ let Search = () => {
                 </div>
 
                 <div className={styles.right} >
-                    <div className={styles.dashboardname}>
-                        <h2>{products[0].NameOfProduct}</h2>
-
-                    </div>
+                    
                     <div className={styles.rightsection}>
                         <Container>
                             {products.map((data) => <PropertyCard
@@ -147,8 +144,10 @@ let Search = () => {
                         <Container>
                             {products.reverse().map((data) => <PropertyCard
                                 key={data._id}
+                                id={data._id}
                                 amount={Number(data.amount)}
                                 imageUrl={`\\${data.photos}`}
+                                addToCart={addToCart}
                                 deleteProduct = {deleteProduct}
                                 editProduct = {editProduct}
                             />)}

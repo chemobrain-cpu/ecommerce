@@ -135,10 +135,7 @@ let Products = () => {
                 </div>
 
                 <div className={styles.right} >
-                    <div className={styles.dashboardname}>
-                        <h2>{products[0].NameOfProduct} collection</h2>
-
-                    </div>
+                  
                     <div className={styles.rightsection}>
                         <Container>
                             {products.map((data) => <PropertyCard
@@ -156,16 +153,15 @@ let Products = () => {
 
                     </div>
                     <div className={styles.leftsection}>
-                    <div className={styles.dashboardname}>
-                        <h2>Recommended </h2>
-
-                    </div>
+                    
 
                         <Container>
-                            {products.reverse().map((data) => <PropertyCard
+                            {products.reverse().map((data) =><PropertyCard
                                 key={data._id}
+                                id={data._id}
                                 amount={Number(data.amount)}
-                                imageUrl={`\\${data.photos}`}
+                                imageUrl={`/${data.photos}`}
+                                addToCart={addToCart}
                                 deleteProduct = {deleteProduct}
                                 editProduct = {editProduct}
                             />)}

@@ -30,12 +30,8 @@ let Home = () => {
             <p>.</p>
 
         </div>
-        <div style={{height:'20vh',display:'flex',alignItems:"center",justifyContent:'center'}}>
+      
 
-        <h3 style={{fontSize:'1.3rem',color:"rgb(95, 95, 95)"}}> PRODUCTS THAT FITS YOUR NEED</h3>
-
-
-        </div>
 
         
         <ProductSection />

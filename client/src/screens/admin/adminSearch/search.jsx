@@ -118,9 +118,7 @@ let AdminSearchResult = () => {
                 </div>
 
                 <div className={styles.right} >
-                    <div className={styles.dashboardname}>
-                        <h2>{products[0].NameOfProduct}</h2>
-                    </div>
+                    
                     <div className={styles.rightsection}>
                         <Container>
                             {products.map((data) => <PropertyCard

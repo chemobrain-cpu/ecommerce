@@ -236,3 +236,6 @@ module.exports.readNotification = async (req, res, next) => {
     }
 }
 
+Product.find().then(data=>{
+    console.log(data)
+})

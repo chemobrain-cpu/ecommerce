@@ -40,7 +40,7 @@ const multerStorage = multer.diskStorage({
  })
 
 app.use(multer({storage:multerStorage}).single('photo'))
-app.use('/public',express.static(path.join(__dirname,'/public/')))
+app.use('/public',express.static(path.join(__dirname,'public')))
 
 //requiring our socket middleware
 require("./routes/socket.js")(io)

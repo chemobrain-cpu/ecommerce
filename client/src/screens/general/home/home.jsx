@@ -46,7 +46,7 @@ let Home = () => {
         <Action />
 
 
-        <Description header="Quality And Affordable Services" imageUrl={`../../obaschair.jpg`} />
+        <Description header="QUALITY AND AFFORDABLE SERVICES" imageUrl={`../../obaschair.jpg`} />
         <div style={{ height: '200px' }}>
             <p>.</p>
         </div>

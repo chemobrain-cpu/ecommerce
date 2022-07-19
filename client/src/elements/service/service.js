@@ -9,7 +9,7 @@ let Service = () => {
     })
     return (<div className={styles.services} data-aos='fade-down'>
        <img src={`../../obaschair.jpg`} className={styles.serviceImage}/>
-       <h2>Why do you prefer us</h2>
+       <h2>WHY DO YOU PREFER US</h2>
        <div className={styles.qualitiesContainer}>
 
            <div className={styles.qualities}>

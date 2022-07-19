@@ -129,7 +129,7 @@ let Search = () => {
                                 key={data._id}
                                 id={data._id}
                                 amount={Number(data.amount)}
-                                imageUrl={`\\${data.photos}`}
+                                imageUrl={`/${data.photos}`}
                                 addToCart={addToCart}
                                 deleteProduct = {deleteProduct}
                                 editProduct = {editProduct}
@@ -146,7 +146,7 @@ let Search = () => {
                                 key={data._id}
                                 id={data._id}
                                 amount={Number(data.amount)}
-                                imageUrl={`\\${data.photos}`}
+                                imageUrl={`/${data.photos}`}
                                 addToCart={addToCart}
                                 deleteProduct = {deleteProduct}
                                 editProduct = {editProduct}

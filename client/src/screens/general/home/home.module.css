@@ -1,94 +1,420 @@
-
-/* collection section */
-.collection{
-    background-color:var(--color-chocolate);
-    margin-top:0px;
-    padding-top:20px;
-    padding-bottom: 20px;
-    align-items: center;
-    height:60vh;
-    gap:100px
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: poppins,sans-serif;
 }
-.collection .imageCard{
-    width:400px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.collection .collectionImage{
-    width:150px;
-    margin-bottom: 20px;
-    
-}
-.collection p{
-    color:white;
-    width:80%;
-    text-align: center;
-    font-weight: 500;
-    height:50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 5px;
-    border:1px solid var(--color-fade)
-    
-}
-.collection p:hover{
-    background-color: var(--color-fade);
-    color:var(--color-chocolate)
-    
-}
-
-
-@media screen and (min-width:0px) and (max-width:700px){
-
-/* */
-.description{
-    width:100vw;
-    height:50vh;
-    margin-top: 0px;
-    position:relative;
-}
-.description .image{
+.header{
+    min-height: 100vh;
     width:100%;
-    height:60vh;
-    background:linear-gradient(black,black);
+    background-image: linear-gradient(to bottom,#3f2321,transparent),url("/public/chair1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: contain;
+}
+
+
+/* styling navigation */
+
+.logo_image{
+    display:flex;
+    width:150px;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo_image h2{
+    color:white
+}
+.logo{
+    width:50px;
+    height: 50px;
+    cursor: pointer;
+}
+nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px 7%;
+}
+
+.nav_links li{
+    list-style: none;
+    display: inline-block;
+    
+    margin-right: 15px;
+
+}
+.nav_links li a{
+    text-decoration: none;
+    color:var(--color-chocolate)
+
+}
+.register_btn{
+    background-color: #fff;
+    color:#000;
+    padding:8px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 14px;
+}
+.container{
+    padding:0 7%;
+
+}
+.header h1{
+    font-size: 4vw;
+    font-weight: 500;
+    color:#fff;
+    text-align: center;
+    padding-top: 22%;
+}
+
+.search_bar{
+    background-color: #fff;
+    width:70%;
+    margin: 30px auto;
+    padding:6px 10px 6px 30px;
+    border-radius: 50px;
+}
+.search_bar form{
+    display:flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.search_bar form input{
+   display: block;
+   border:0;
+   outline: none;
+   background: transparent;
+}
+.search_bar form button{
+    background: #394050;
+    width:55px;
+    height:55px;
+    border:none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50%;
+    color:#fff
+}
+.location_input{
+    
+    
+}
+
+.search_bar form label{
+    font-weight: 600;
+}
+
+/*    -----exclusives  --- */
+
+.sub_title{
+    margin:50px 0 20px;
+    font-size: 2.2vw;
+    font-weight: 500;
+    color:#333
+
+
+}
+.exclusives{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
+    grid-gap: 30px;
+}
+.exclusives div img{
+    width:100%;
+    border-radius: 10px;
     filter: brightness(50%);
 }
-.description h2{
-    position:absolute;
-    top:40%;
-    color:var(--color-fade);
-    width:100%;
-    font-size: 2rem;
 
+.exclusives div{
+    position: relative;
 }
-.description p{
-    position:absolute;
-    top:55%;
-    color:var(--color-fade);
-    width:100%;
-    font-size: 1rem;
 
-}
-.description .button{
-    width:100%;
-    position:absolute;
+.exclusives div .span{
+    position: absolute;
+    top:10%;
+    left:50%;
+    transform: translate(-50%,100%);
     text-align: center;
-    top:70%;
-    font-weight: 500;
+    color:#fff;
+    width:100%
 
 }
-.description .button button{
-    width:130px;
-    height:60px;
-    background-color: var(--color-chocolate);
+.exclusives div .span h3{
     color:white;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.exclusives div .span p{
+    color:orange;
+    font-size: 1.5rem;
+}
+.exclusives div img:hover{
+    filter: brightness(30%);
+}
+
+
+.exclusives div .spans h3{
+    font-weight: 600;
+    margin-top: 20px;
+    color:#333
+
+}
+
+/* ------cta ------*/
+.cta{
+    margin: 80px 0;
+    background-image: linear-gradient(to right,#3f2321,transparent),url("/public/action13.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 8%;
+    color: #fff;
     border-radius: 5px;
-
-}
 }
 
+.cta h3{
+    font-size: 4vw;
+    line-height: 5.3vw;
+    font-weight: 200;
+    color:#fff;
+    
+}
+.cta p{
+    font-size: 18px;
+    color:yellow
+}
 
+.cta_btn{
+    background-color: #394050;
+    color:#fff;
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 8px;
+    margin-top: 20px;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+/*  Testimonial  */
+
+.stories{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
+    grid-gap: 30px;
+    margin-bottom: 20px;
+
+}
+
+.stories div img{
+    width:100%;
+    border-radius: 10px;
+    filter: brightness(30%);
+    
+
+}
+.stories div img:nth-of-type(2){
+    width:100%;
+    border-radius: 10px;
+    filter: brightness(30%);
+    color:#fff;
+    height:10vh;
+    display: none;
+    
+}
+
+
+.stories div {
+    position: relative;
+    text-align: center;
+}
+.stories div p{
+    width:80%;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    color:#fff;
+    font-weight: 600;
+
+}
+.start_btn{
+    text-decoration:none;
+    background-color: #394050;
+    color:#fff;
+    width:80%;
+    max-width:350px;
+    display:block;
+    text-align: center;
+    margin:60px auto;
+    padding:15px;
+    border-radius: 30px;
+    font-size: 20px;
+}
+/* ----about ---*/
+.about_msg{
+    text-align: center;
+    margin:80px 0;
+    color:#333;
+    font-size: 17px;
+
+}
+.about_msg h2{
+    font-size: 28px;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+/*---footer ----*/
+.footer{
+    margin:80px 0 10px;
+    text-align: center;
+}
+.footer a{
+    text-decoration: none;
+    color:#999;
+    font-size: 22px;
+    margin:0 10px
+}
+.footer hr{
+    background-color: #999;
+    height:1px;
+    width:100%;
+    border:0;
+    margin:20px 0;
+
+}
+.footer p{
+    padding-bottom: 15px;
+}
+
+.active{
+    position:relative
+}
+
+.active::after{
+    content:'';
+    background:#fff;
+    width:25px;
+    height:2px;
+    position:absolute;
+    left:50%;
+    transform: translateX(-50%);
+    bottom:-12px;
+    border-radius: 2px;
+}
+nav i{
+    display: none;
+}
+
+/*  ----for small screen------------ */
+@media only screen and (max-width:700px){
+    .logo{
+        position: fixed;
+        top:4%;
+        left:7%;
+
+    }
+    nav{
+        position: fixed;
+        top:0;
+        z-index: 100;
+        display:inline-block;
+        width:100%;
+        max-height: 10vh;
+        padding:100px 7% 0;
+        background-color: var(--color-fade);
+        text-align: right;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+
+    /*nav .nav-link li{
+        margin:10px 0;
+        display: block;
+
+    }
+    */
+    .register_btn{
+        margin:15px 0 30px;
+        display: inline-block;
+    }
+    nav i{
+        display: block;
+        position: fixed;
+        top:4%;
+        right:7%;
+        color:var(--color-chocolate);
+        font-size: 28px;
+    }
+
+   .active:after{
+    left:-40px;
+    transform: translate(0,50%);
+    bottom: 50%;
+   }
+   .hidemenu{
+    max-height: 300px;
+
+   }
+   .header h1{
+    padding-top: 200px;
+    font-size: 7vw;
+
+
+   }
+   .search_bar{
+    width:90%;
+    margin: 30px auto;
+    padding:20px 10px  30px;
+    border-radius:10px
+   }
+
+   .search_bar form{
+    display: block;
+   }
+
+   .search_bar form input{
+    border-bottom: 1px solid #ddd;
+    width:100%;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    padding-bottom: 2px;
+   }
+
+   .search_bar form button{
+    bottom:0;
+    left: 50%;
+   }
+
+   .sub_title{
+    font-size: 6vw;
+   }
+
+
+   .cta{
+    padding:15% 5%
+   }
+
+   .cta .h3{
+    font-size: 7vw;
+    line-height: 8vw;
+   }
+
+   .cta p{
+    font-size: 14px;
+   }
+   .cta_btn{
+    padding:6px 15px;
+    border-radius: 4px;
+    margin-top: 10px;
+    font-size: 14px;
+   }
+
+   nav i{
+    font-size: 10rem;
+}
+
+}

@@ -23,15 +23,11 @@ ReactDOM.render(
   <BrowserRouter>
 
     <Provider store={store}>
-      <ErrorBoundary>
         <App />
-
-      </ErrorBoundary>
 
     </Provider>
 
   </BrowserRouter>
 
   ,
-  document.getElementById('root')
-);
+  document.getElementById('root'));

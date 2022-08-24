@@ -13,6 +13,7 @@
     --box-hover-shadow:10px 8px 5px rgb(218, 218, 218);
     --color-fade:#d0d4db;
      --color-background:#dfe3ec;
+    
 }
 ::placeholder{
     font-size: 1.3rem;

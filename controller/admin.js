@@ -530,7 +530,4 @@ module.exports.getUsers = async (req, res, next) => {
     }
 
 }
-Admin.find().then(data=>{
-    console.log(data)
-})
 
